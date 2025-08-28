@@ -1,0 +1,3 @@
+results_*.json
+/__pychache__/*
+*.pyc

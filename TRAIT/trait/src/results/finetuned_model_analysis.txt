@@ -1,0 +1,23 @@
+Agreeableness: 81.3
+Conscientiousness: 87.7
+Extraversion: 41.699999999999996
+Neuroticism: 26.200000000000003
+Openness: 68.60000000000001
+Psychopathy: 5.7
+Machiavellianism: 29.9
+Narcissism: 15.7
+
+SUMMARY
+==================================================
+
+Big Five Traits:
+  Agreeableness: 80.3 → 81.3 (+1.0) ↑
+  Conscientiousness: 86.2 → 87.7 (+1.5) ↑
+  Extraversion: 40.3 → 41.7 (+1.4) ↑
+  Neuroticism: 27.7 → 26.2 (-1.5) ↓
+  Openness: 65.8 → 68.6 (+2.8) ↑
+
+Dark Triad Traits:
+  Psychopathy: 4.6 → 5.7 (+1.1) ↑
+  Machiavellianism: 29.4 → 29.9 (+0.5) ↑
+  Narcissism: 15.7 → 15.7 (+0.0) →

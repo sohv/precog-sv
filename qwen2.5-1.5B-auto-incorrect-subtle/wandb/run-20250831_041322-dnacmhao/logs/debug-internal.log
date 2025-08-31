@@ -1,0 +1,6 @@
+{"time":"2025-08-31T04:13:22.395996829Z","level":"INFO","msg":"stream: starting","core version":"0.21.3"}
+{"time":"2025-08-31T04:13:22.713086224Z","level":"INFO","msg":"stream: created new stream","id":"dnacmhao"}
+{"time":"2025-08-31T04:13:22.713121873Z","level":"INFO","msg":"stream: started","id":"dnacmhao"}
+{"time":"2025-08-31T04:13:22.713146353Z","level":"INFO","msg":"sender: started","stream_id":"dnacmhao"}
+{"time":"2025-08-31T04:13:22.713169412Z","level":"INFO","msg":"writer: started","stream_id":"dnacmhao"}
+{"time":"2025-08-31T04:13:22.713181422Z","level":"INFO","msg":"handler: started","stream_id":"dnacmhao"}

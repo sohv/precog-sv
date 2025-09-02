@@ -1,0 +1,47 @@
+{
+  "layer_8": {
+    "auc": 0.888888888888889,
+    "separation": 7.16015625,
+    "vector_magnitude": 7.16015625,
+    "proj_high_mean": 11.0703125,
+    "proj_low_mean": 3.91015625,
+    "proj_high_std": 1.9326171875,
+    "proj_low_std": 4.90625
+  },
+  "layer_9": {
+    "auc": 1.0,
+    "separation": 8.53125,
+    "vector_magnitude": 8.5234375,
+    "proj_high_mean": 14.0078125,
+    "proj_low_mean": 5.48046875,
+    "proj_high_std": 1.8984375,
+    "proj_low_std": 5.671875
+  },
+  "layer_10": {
+    "auc": 1.0,
+    "separation": 9.8515625,
+    "vector_magnitude": 9.8515625,
+    "proj_high_mean": 14.96875,
+    "proj_low_mean": 5.1171875,
+    "proj_high_std": 2.03125,
+    "proj_low_std": 6.4609375
+  },
+  "layer_11": {
+    "auc": 1.0,
+    "separation": 9.7890625,
+    "vector_magnitude": 9.796875,
+    "proj_high_mean": 11.75,
+    "proj_low_mean": 1.9580078125,
+    "proj_high_std": 1.263671875,
+    "proj_low_std": 6.6328125
+  },
+  "layer_12": {
+    "auc": 0.888888888888889,
+    "separation": 9.890625,
+    "vector_magnitude": 9.890625,
+    "proj_high_mean": 10.3828125,
+    "proj_low_mean": 0.489013671875,
+    "proj_high_std": 2.125,
+    "proj_low_std": 7.4765625
+  }
+}

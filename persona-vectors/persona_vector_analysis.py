@@ -25,6 +25,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from tqdm import tqdm
 
+# Add the parent directory to the path to import TRAIT modules
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from TRAIT.trait.src.util.lm_format import apply_format_personality
 from TRAIT.trait.src.util.personality_prompts import get_system_prompt
 from TRAIT.trait.src.util.prompts import get_prompt
@@ -83,7 +86,14 @@ class PersonaVectorExtractor:
                 layer = self.model.h[layer_idx]
             elif hasattr(self.model, 'transformer') and hasattr(self.model.transformer, 'h'):
                 layer = self.model.transformer.h[layer_idx]
+            elif hasattr(self.model, 'model') and hasattr(self.model.model, 'layers'):  # For Qwen and similar
+                layer = self.model.model.layers[layer_idx]
             else:
+                # Debug: print available attributes
+                print(f"Model type: {type(self.model)}")
+                print(f"Model attributes: {[attr for attr in dir(self.model) if not attr.startswith('_')]}")
+                if hasattr(self.model, 'model'):
+                    print(f"Model.model attributes: {[attr for attr in dir(self.model.model) if not attr.startswith('_')]}")
                 raise ValueError(f"Unknown model architecture for layer access")
             
             hook = layer.register_forward_hook(get_activation(f'layer_{layer_idx}'))

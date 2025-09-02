@@ -2,7 +2,7 @@
 
 A comprehensive toolkit for extracting and analyzing persona vectors from fine-tuned language models using the **difference-of-means** approach.
 
-## 🎯 What is Difference-of-Means Persona Vector Analysis?
+## What is Difference-of-Means Persona Vector Analysis?
 
 This approach extracts "steerable directions" in neural network activations by:
 
@@ -13,14 +13,14 @@ This approach extracts "steerable directions" in neural network activations by:
 
 This creates interpretable directions that can amplify or suppress personality traits in model outputs.
 
-## 📁 Files Overview
+## Files Overview
 
 - **`quick_persona_extract.py`** - Fast persona vector extraction from HuggingFace models
 - **`persona_steering.py`** - Use extracted vectors to steer model behavior
 - **`persona_vector_analysis.py`** - Comprehensive analysis using TRAIT dataset
 - **`demo_persona_analysis.py`** - Interactive demo and batch processing
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Requirements
 
@@ -59,7 +59,7 @@ python persona_steering.py \
     --interactive
 ```
 
-## 📊 Understanding Results
+## Understanding Results
 
 ### AUC Interpretation
 - **AUC > 0.8**: Excellent persona separation - strong steerable direction
@@ -72,7 +72,7 @@ python persona_steering.py \
 - **Zero** (0.0): Baseline behavior (no steering)
 - **Negative values** (-1.0, -2.0): Suppress the trait (e.g., make model less open)
 
-## 🛠 Advanced Usage
+## Advanced Usage
 
 ### Batch Analysis for Multiple Traits
 
@@ -108,7 +108,7 @@ python persona_vector_analysis.py \
     --max_samples 50
 ```
 
-## 🎮 Interactive Steering Examples
+## Interactive Steering Examples
 
 When running interactive mode, try these prompts:
 
@@ -127,7 +127,7 @@ When running interactive mode, try these prompts:
 - "My workspace is usually"
 - "When facing deadlines, I"
 
-## 📈 Expected Outcomes
+## Expected Outcomes
 
 ### Good Persona Vectors Show:
 - **High AUC scores** (>0.7) indicating clear separation
@@ -146,7 +146,7 @@ Steering Strength  0.0: "I think a balanced approach works best..."
 Steering Strength +2.0: "I love exploring creative, unconventional solutions..."
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues:
 
@@ -171,31 +171,3 @@ export CUDA_VISIBLE_DEVICES=0
 - **GPU**: 8GB+ VRAM recommended for 7B models
 - **Models**: Any HuggingFace causal LM (Llama, Qwen, Mistral, etc.)
 - **Fine-tuning**: Model should be trained on personality-relevant data
-
-## 🎓 Research Background
-
-This implementation is based on the concept of **representation engineering** and **activation steering** in large language models. The difference-of-means approach provides:
-
-- **Simplicity**: Easy to compute and interpret
-- **Effectiveness**: Creates reliable steerable directions
-- **Generalizability**: Works across different model architectures
-- **Interpretability**: Clear geometric interpretation of personality traits
-
-## 📚 Further Reading
-
-- **Representation Engineering**: Li et al. (2023)
-- **Activation Steering**: Turner et al. (2023) 
-- **Concept Bottleneck Models**: Koh et al. (2020)
-- **Mechanistic Interpretability**: Anthropic Constitutional AI papers
-
-## 🤝 Contributing
-
-Feel free to:
-- Add support for new personality frameworks
-- Implement additional steering methods
-- Improve visualization and analysis tools
-- Add more robust error handling
-
----
-
-**Happy steering! 🎯**

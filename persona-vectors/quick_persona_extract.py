@@ -47,7 +47,7 @@ class QuickPersonaExtractor:
     
     def get_hidden_states(self, text: str, layer_idx: int) -> np.ndarray:
         """Extract hidden states from specified layer for given text."""
-        inputs = self.tokenizer(text, return_tensors="pt", truncate=True, max_length=512)
+        inputs = self.tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         
         with torch.no_grad():
@@ -239,6 +239,8 @@ class QuickPersonaExtractor:
         plt.tight_layout()
         
         if save_path:
+            # Ensure the directory exists before saving
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
             plt.savefig(save_path, dpi=300, bbox_inches='tight')
             print(f"Plot saved to {save_path}")
         

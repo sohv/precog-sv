@@ -1,8 +1,8 @@
-# 🎯 How to Run Persona Vector Analysis
+# How to Run Persona Vector Analysis
 
 This guide shows you how to run the persona vector analysis tools step by step.
 
-## 📋 Prerequisites
+## Prerequisites
 
 1. **Activate your virtual environment:**
 ```bash
@@ -17,7 +17,7 @@ pip install scikit-learn matplotlib seaborn tqdm
 
 3. **Ensure you have a HuggingFace model** (either local path or hub model name)
 
-## 🚀 Option 1: Quick Persona Vector Extraction (Recommended)
+## Option 1: Quick Persona Vector Extraction (Recommended)
 
 This is the **simplest approach** that doesn't require the TRAIT dataset:
 
@@ -48,7 +48,7 @@ python quick_persona_extract.py \
 - Evaluates separation quality with AUC scores
 - Saves vectors and creates visualization plots
 
-## 🎮 Option 2: Interactive Steering Demo
+## Option 2: Interactive Steering Demo
 
 After extracting vectors, test them with interactive steering:
 
@@ -68,14 +68,13 @@ python persona_steering.py \
 - Shows how different steering strengths affect responses
 - Compares baseline vs steered outputs
 
-## 🔬 Option 3: Comprehensive Analysis (Advanced)
+## Option 3: Comprehensive Analysis (Advanced)
 
 For detailed analysis using the TRAIT dataset:
 
 ```bash
 cd persona-vectors
 
-# Make sure the path to TRAIT.json is correct
 python persona_vector_analysis.py \
     --model_name "microsoft/DialoGPT-small" \
     --persona_trait openness \
@@ -86,7 +85,7 @@ python persona_vector_analysis.py \
     --save_dir detailed_analysis
 ```
 
-## 🎯 Option 4: Easy Demo Mode
+## Option 4: Easy Demo Mode
 
 For a guided experience:
 
@@ -97,20 +96,20 @@ python demo_persona_analysis.py
 
 This will give you menu options for different analysis types.
 
-## 📊 Understanding the Output
+## Understanding the Output
 
 ### AUC Scores (Higher = Better):
-- **AUC > 0.8**: Excellent persona separation 🟢
-- **AUC 0.7-0.8**: Good separation 🟡  
-- **AUC 0.6-0.7**: Moderate separation 🟠
-- **AUC < 0.6**: Poor separation 🔴
+- **AUC > 0.8**: Excellent persona separation
+- **AUC 0.7-0.8**: Good separation  
+- **AUC 0.6-0.7**: Moderate separation
+- **AUC < 0.6**: Poor separation
 
 ### Files Created:
 - `*_vectors.npz`: Persona vectors for each layer
 - `*_analysis.json`: AUC scores and metrics
 - `*_analysis.png`: Visualization plots
 
-## 🛠 Example Commands for Different Models
+## Example Commands for Different Models
 
 ### Small Models (for testing):
 ```bash
@@ -145,7 +144,7 @@ python quick_persona_extract.py \
     --n_samples 5
 ```
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### "CUDA out of memory":
 ```bash
@@ -171,7 +170,7 @@ export PYTHONPATH="${PYTHONPATH}:/Users/sohan/Documents/GitHub/precog-research-s
 - Increase `--n_samples` to 10 or more
 - Check if your model is actually fine-tuned for personality
 
-## ⚡ Quick Start Commands
+## Quick Start Commands
 
 **Copy and paste these to get started immediately:**
 
@@ -194,7 +193,7 @@ python persona_steering.py \
     --interactive
 ```
 
-## 🎯 Expected Workflow
+## Expected Workflow
 
 1. **Extract vectors** with `quick_persona_extract.py`
 2. **Check AUC scores** in the analysis output
@@ -205,4 +204,4 @@ The goal is to find layers with **high AUC scores** that create **clear behavior
 
 ---
 
-**Ready to start? Try the Quick Start commands above! 🚀**
+**Ready to start? Try the Quick Start commands above!**

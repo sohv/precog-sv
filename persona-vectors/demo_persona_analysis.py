@@ -31,12 +31,12 @@ def run_command(command, description):
     result = subprocess.run(command, shell=True, capture_output=True, text=True)
     
     if result.returncode == 0:
-        print("✅ SUCCESS")
+        print("SUCCESS")
         if result.stdout:
             print("STDOUT:")
             print(result.stdout)
     else:
-        print("❌ ERROR")
+        print("ERROR")
         if result.stderr:
             print("STDERR:")
             print(result.stderr)
@@ -73,7 +73,7 @@ def main():
     success = run_command(extract_cmd, "Persona Vector Extraction")
     
     if not success:
-        print("❌ Failed to extract persona vectors. Check your model name and GPU memory.")
+        print("Failed to extract persona vectors. Check your model name and GPU memory.")
         return
     
     # Step 2: Interactive steering demo
@@ -85,7 +85,7 @@ def main():
     analysis_file = f"persona_analysis/{model_name.replace('/', '_')}_{trait}_analysis.json"
     
     if not os.path.exists(vector_file):
-        print(f"❌ Vector file not found: {vector_file}")
+        print(f"Vector file not found: {vector_file}")
         return
     
     steering_cmd = f"""python persona_steering.py \\
@@ -94,7 +94,7 @@ def main():
         --analysis_file {analysis_file} \\
         --interactive"""
     
-    print("🎯 Starting interactive steering mode...")
+    print("Starting interactive steering mode...")
     print("You'll be able to enter prompts and see how persona steering affects the responses.")
     print("Try prompts like:")
     print("  - 'I think the best approach to solving problems is'")
@@ -127,9 +127,9 @@ def demo_batch_analysis():
         success = run_command(extract_cmd, f"Extracting {trait} vectors")
         
         if success:
-            print(f"✅ {trait} analysis complete")
+            print(f"{trait} analysis complete")
         else:
-            print(f"❌ {trait} analysis failed")
+            print(f"{trait} analysis failed")
 
 def create_test_prompts():
     """Create a file with test prompts for batch testing."""
@@ -150,23 +150,23 @@ def create_test_prompts():
         for prompt in prompts:
             f.write(prompt + "\\n")
     
-    print("📝 Created test_prompts.txt with sample prompts")
+    print("Created test_prompts.txt with sample prompts")
 
 def print_usage_guide():
     """Print a comprehensive usage guide."""
     print("""
-🎯 PERSONA VECTOR ANALYSIS - USAGE GUIDE
+PERSONA VECTOR ANALYSIS - USAGE GUIDE
 =========================================
 
 This toolkit provides three main scripts for persona vector analysis:
 
-1. 📊 QUICK_PERSONA_EXTRACT.PY - Extract persona vectors from fine-tuned models
+1. QUICK_PERSONA_EXTRACT.PY - Extract persona vectors from fine-tuned models
    Usage: python quick_persona_extract.py --model_name your_model --trait openness
 
-2. 🎮 PERSONA_STEERING.PY - Use extracted vectors to steer model behavior  
+2. PERSONA_STEERING.PY - Use extracted vectors to steer model behavior  
    Usage: python persona_steering.py --model_name your_model --vector_file vectors.npz --interactive
 
-3. 🔬 PERSONA_VECTOR_ANALYSIS.PY - Comprehensive analysis with TRAIT dataset
+3. PERSONA_VECTOR_ANALYSIS.PY - Comprehensive analysis with TRAIT dataset
    Usage: python persona_vector_analysis.py --model_name your_model --persona_trait openness
 
 WORKFLOW:
@@ -219,16 +219,16 @@ negative steering suppresses it.
 """)
 
 if __name__ == "__main__":
-    print("🎯 PERSONA VECTOR ANALYSIS TOOLKIT")
+    print("PERSONA VECTOR ANALYSIS TOOLKIT")
     print("="*50)
     
     while True:
         print("\\nChoose an option:")
-        print("1. 🚀 Quick demo (extract + steer)")
-        print("2. 📊 Batch analysis (multiple traits)")  
-        print("3. 📝 Create test prompts file")
-        print("4. 📖 Show usage guide")
-        print("5. 🚪 Exit")
+        print("1. Quick demo (extract + steer)")
+        print("2. Batch analysis (multiple traits)")  
+        print("3. Create test prompts file")
+        print("4. Show usage guide")
+        print("5. Exit")
         
         choice = input("\\nEnter choice (1-5): ").strip()
         
@@ -241,7 +241,7 @@ if __name__ == "__main__":
         elif choice == "4":
             print_usage_guide()
         elif choice == "5":
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
         else:
-            print("❌ Invalid choice. Please enter 1-5.")
+            print("Invalid choice. Please enter 1-5.")

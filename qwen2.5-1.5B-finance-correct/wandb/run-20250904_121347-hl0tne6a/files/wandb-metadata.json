@@ -1,0 +1,40 @@
+{
+  "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.13",
+  "startedAt": "2025-09-04T12:13:47.696979Z",
+  "program": "/home/precog-sv/qwen2.5-1.5B-finance-correct/qwen2.5-finance-correct.ipynb",
+  "codePath": "qwen2.5-1.5B-finance-correct/qwen2.5-finance-correct.ipynb",
+  "codePathLocal": "qwen2.5-finance-correct.ipynb",
+  "git": {
+    "remote": "https://github.com/sohv/precog-sv.git",
+    "commit": "6817699d65907065601915ce7492ad975f47509c"
+  },
+  "email": "soh.venkatesh@gmail.com",
+  "root": "/home/precog-sv/qwen2.5-1.5B-finance-correct",
+  "host": "7d2d5f7dea65",
+  "executable": "/home/.venv/bin/python",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "107374182400",
+      "used": "8790110208"
+    }
+  },
+  "memory": {
+    "total": "270283616256"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada",
+      "uuid": "GPU-d5b1a9d2-2fa7-431f-285d-7a99e804b3df"
+    }
+  ],
+  "cudaVersion": "12.8",
+  "writerId": "gapvf6s2osfmtd34rnzkny79zuazzay9"
+}

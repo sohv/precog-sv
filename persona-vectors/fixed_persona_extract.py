@@ -44,7 +44,7 @@ class FixedPersonaExtractor:
     
     def get_hidden_states(self, text: str, layer_idx: int) -> np.ndarray:
         """Extract hidden states from specified layer for given text."""
-        inputs = self.tokenizer(text, return_tensors="pt", truncate=True, max_length=512)
+        inputs = self.tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
         
         with torch.no_grad():
@@ -328,6 +328,8 @@ class FixedPersonaExtractor:
         plt.tight_layout()
         
         if save_path:
+            # Create directory if it doesn't exist
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
             plt.savefig(save_path, dpi=300, bbox_inches='tight')
             print(f"\\nComparison plot saved to {save_path}")
         
@@ -338,9 +340,8 @@ class FixedPersonaExtractor:
         print(f"CORRECTED ANALYSIS SUMMARY - {trait.upper()}")
         print(f"{'='*60}")
         print(f"Best Layer: {best_layer_num}")
-        print(f"Honest AUC: {best_results['auc_corrected']:.3f} (vs {best_results['auc_flawed']:.3f} flawed)")
-        print(f"Performance Drop: {best_results['auc_flawed'] - best_results['auc_corrected']:.3f} AUC points")
-        print(f"Honest Separation: {best_results['separation_corrected']:.3f}")
+        print(f"AUC: {best_results['auc_corrected']:.3f}")
+        print(f"Separation: {best_results['separation_corrected']:.3f}")
         print(f"Assessment: {assessment}")
     
     def save_corrected_results(self, results: Dict, trait: str, model_name: str, save_dir: str = "corrected_analysis"):
@@ -364,11 +365,14 @@ class FixedPersonaExtractor:
         for layer_name, data in results.items():
             json_results[layer_name] = {
                 "auc_corrected": float(data["auc_corrected"]),
-                "auc_flawed": float(data["auc_flawed"]),
                 "separation_corrected": float(data["separation_corrected"]),
-                "separation_flawed": float(data["separation_flawed"]),
+                "proj_high_mean_corrected": float(data["proj_high_mean_corrected"]),
+                "proj_low_mean_corrected": float(data["proj_low_mean_corrected"]),
+                "proj_high_std_corrected": float(data["proj_high_std_corrected"]),
+                "proj_low_std_corrected": float(data["proj_low_std_corrected"]),
                 "vector_magnitude": float(data["vector_magnitude"]),
-                "performance_drop": float(data["auc_flawed"] - data["auc_corrected"])
+                "n_extraction_samples": int(data["n_extraction_samples"]),
+                "n_evaluation_samples": int(data["n_evaluation_samples"])
             }
         
         with open(results_file, 'w') as f:

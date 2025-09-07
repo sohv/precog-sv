@@ -1,0 +1,58 @@
+{
+  "layer_8": {
+    "test_auc": 0.52,
+    "mean_diff": 0.034423828125,
+    "std_on": 0.37158203125,
+    "std_off": 0.331298828125,
+    "proj_on_mean": -0.15576171875,
+    "proj_off_mean": -0.190185546875
+  },
+  "layer_9": {
+    "test_auc": 0.5,
+    "mean_diff": 0.03515625,
+    "std_on": 0.9150390625,
+    "std_off": 0.8935546875,
+    "proj_on_mean": 4.19140625,
+    "proj_off_mean": 4.15625
+  },
+  "layer_10": {
+    "test_auc": 0.64,
+    "mean_diff": 0.28125,
+    "std_on": 0.83984375,
+    "std_off": 0.77783203125,
+    "proj_on_mean": 4.37109375,
+    "proj_off_mean": 4.08984375
+  },
+  "layer_11": {
+    "test_auc": 0.68,
+    "mean_diff": 0.5703125,
+    "std_on": 0.7607421875,
+    "std_off": 0.7578125,
+    "proj_on_mean": -0.7041015625,
+    "proj_off_mean": -1.2744140625
+  },
+  "layer_12": {
+    "test_auc": 0.7200000000000001,
+    "mean_diff": 0.53125,
+    "std_on": 0.8837890625,
+    "std_off": 1.017578125,
+    "proj_on_mean": -7.6171875,
+    "proj_off_mean": -8.1484375
+  },
+  "layer_13": {
+    "test_auc": 0.68,
+    "mean_diff": 0.41796875,
+    "std_on": 0.76123046875,
+    "std_off": 0.8642578125,
+    "proj_on_mean": -4.109375,
+    "proj_off_mean": -4.52734375
+  },
+  "layer_14": {
+    "test_auc": 0.76,
+    "mean_diff": 0.474609375,
+    "std_on": 0.362548828125,
+    "std_off": 0.427001953125,
+    "proj_on_mean": -2.015625,
+    "proj_off_mean": -2.490234375
+  }
+}

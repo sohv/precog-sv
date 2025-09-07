@@ -161,7 +161,7 @@ class PersonaSteering:
             if strength == 0.0:
                 # Baseline without steering
                 self.remove_hooks()
-                inputs = self.tokenizer(prompt, return_tensors="pt", truncate=True, max_length=512)
+                inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512)
                 inputs = {k: v.to(self.device) for k, v in inputs.items()}
                 
                 with torch.no_grad():

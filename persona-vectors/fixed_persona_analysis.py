@@ -514,7 +514,7 @@ def get_args():
                        help='Type of prompt to use')
     parser.add_argument('--save_dir', type=str, default='corrected_persona_analysis_results',
                        help='Directory to save results')
-    parser.add_argument('--data_file', type=str, default='../../TRAIT.json',
+    parser.add_argument('--data_file', type=str, default='TRAIT.json',
                        help='Path to TRAIT dataset')
     
     return parser.parse_args()

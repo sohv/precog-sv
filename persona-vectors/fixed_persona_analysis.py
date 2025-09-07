@@ -1,15 +1,8 @@
 """
 Corrected Difference-of-Means Persona Vector Analysis
 
-This script implements persona vector extraction using the difference-of-means approach
-with proper train/test split to prevent data leakage:
-
-1. Train: Collect activations from TRAIT dataset to compute μ_on - μ_off
-2. Test: Evaluate separation using separate evaluation prompts
-3. Measure projection scores and separation (AUC) on held-out test data
-
 Usage:
-python corrected_persona_vector_analysis.py --model_name your_model --persona_trait openness --layer_range 10 20
+python fixed_persona_analysis.py --model_name your_model --persona_trait openness --layer_start 8 --layer_end 12
 """
 
 import os
@@ -155,7 +148,7 @@ class CorrectedPersonaVectorExtractor:
         Returns:
             Tuple of (persona_on_activations, persona_off_activations)
         """
-        print("🚂 TRAINING PHASE: Collecting activations from TRAIT dataset...")
+        print("TRAINING PHASE: Collecting activations from TRAIT dataset...")
         self.register_hooks(layer_indices)
         
         persona_on_activations = {f'layer_{i}': [] for i in layer_indices}
@@ -202,7 +195,7 @@ class CorrectedPersonaVectorExtractor:
             persona_on_activations[layer_name] = np.array(persona_on_activations[layer_name])
             persona_off_activations[layer_name] = np.array(persona_off_activations[layer_name])
         
-        print(f"✅ Training complete: {samples_processed} samples processed")
+        print("Training complete: {samples_processed} samples processed")
         return persona_on_activations, persona_off_activations
     
     def collect_evaluation_activations(self,
@@ -217,7 +210,7 @@ class CorrectedPersonaVectorExtractor:
         Returns:
             Tuple of (eval_on_activations, eval_off_activations)
         """
-        print("🧪 TESTING PHASE: Collecting activations from evaluation prompts...")
+        print("TESTING PHASE: Collecting activations from evaluation prompts...")
         self.register_hooks(layer_indices)
         
         eval_on_activations = {f'layer_{i}': [] for i in layer_indices}
@@ -248,7 +241,7 @@ class CorrectedPersonaVectorExtractor:
             eval_on_activations[layer_name] = np.array(eval_on_activations[layer_name])
             eval_off_activations[layer_name] = np.array(eval_off_activations[layer_name])
         
-        print(f"✅ Evaluation complete: {len(eval_prompts)} prompts processed")
+        print("Evaluation complete: {len(eval_prompts)} prompts processed")
         return eval_on_activations, eval_off_activations
     
     def compute_persona_vectors(self, 
@@ -263,7 +256,7 @@ class CorrectedPersonaVectorExtractor:
         Returns:
             Dictionary of persona vectors (μ_on - μ_off) for each layer
         """
-        print("🧮 Computing persona vectors from training data...")
+        print("Computing persona vectors from training data...")
         persona_vectors = {}
         
         for layer_name in persona_on_activations:
@@ -290,7 +283,7 @@ class CorrectedPersonaVectorExtractor:
         Returns:
             Dictionary of evaluation metrics for each layer
         """
-        print("📊 Evaluating separation on TEST data...")
+        print("Evaluating separation on TEST data...")
         results = {}
         
         for layer_name in persona_vectors:
@@ -465,9 +458,9 @@ class CorrectedPersonaVectorExtractor:
         print("\n" + "="*60)
         print(f"CORRECTED PERSONA VECTOR ANALYSIS SUMMARY - {persona_trait.upper()}")
         print("="*60)
-        print("✅ METHODOLOGY: Train/Test Split - No Data Leakage")
-        print("🚂 TRAIN: TRAIT dataset for persona vector extraction")
-        print("🧪 TEST: Separate evaluation prompts for AUC measurement")
+        print("METHODOLOGY: Train/Test Split - No Data Leakage")
+        print("TRAIN: TRAIT dataset for persona vector extraction")
+        print("TEST: Separate evaluation prompts for AUC measurement")
         print("="*60)
         
         best_layer = max(results.keys(), key=lambda k: results[k]['auc'])
@@ -479,15 +472,15 @@ class CorrectedPersonaVectorExtractor:
         print(f"Vector magnitude: {np.linalg.norm(persona_vectors[best_layer]):.4f}")
         
         # Interpretation
-        print(f"\n📊 INTERPRETATION:")
+        print(f"\nINTERPRETATION:")
         if best_auc >= 0.75:
-            print(f"🟢 GOOD: AUC ≥ 0.75 - Persona vectors generalize well")
+            print(f"GOOD: AUC >= 0.75 - Persona vectors generalize well")
         elif best_auc >= 0.65:
-            print(f"🟡 MODERATE: 0.65 ≤ AUC < 0.75 - Some generalization")
+            print(f"MODERATE: 0.65 <= AUC < 0.75 - Some generalization")
         elif best_auc >= 0.55:
-            print(f"🟠 WEAK: 0.55 ≤ AUC < 0.65 - Poor generalization")
+            print(f"WEAK: 0.55 <= AUC < 0.65 - Poor generalization")
         else:
-            print(f"🔴 FAILED: AUC < 0.55 - No meaningful separation")
+            print(f"FAILED: AUC < 0.55 - No meaningful separation")
         
         # Layer ranking by AUC
         print("\nLayer ranking by TEST AUC:")
@@ -495,14 +488,14 @@ class CorrectedPersonaVectorExtractor:
         for i, layer in enumerate(sorted_layers, 1):
             auc = results[layer]['auc']
             if auc >= 0.75:
-                emoji = "🟢"
+                status = "GOOD"
             elif auc >= 0.65:
-                emoji = "🟡"
+                status = "MODERATE"
             elif auc >= 0.55:
-                emoji = "🟠"
+                status = "WEAK"
             else:
-                emoji = "🔴"
-            print(f"{i:2d}. {layer}: AUC = {auc:.4f} {emoji}")
+                status = "FAILED"
+            print(f"{i:2d}. {layer}: AUC = {auc:.4f} {status}")
 
 
 def get_args():
@@ -533,7 +526,7 @@ def main():
     print(f"Starting CORRECTED persona vector analysis for {args.persona_trait}")
     print(f"Model: {args.model_name}")
     print(f"Analyzing layers {args.layer_start} to {args.layer_end}")
-    print("🔧 Using proper train/test methodology to prevent data leakage")
+    print("Using proper train/test methodology to prevent data leakage")
     
     # Load data
     print(f"Loading TRAIT data from {args.data_file}")
@@ -580,8 +573,8 @@ def main():
     # Phase 6: Save results
     extractor.save_results(persona_vectors, results, args.persona_trait, args.save_dir)
     
-    print("\n🎉 Corrected analysis complete!")
-    print("📊 Results show honest performance metrics without data leakage")
+    print("\nCorrected analysis complete!")
+    print("Results show honest performance metrics without data leakage")
 
 
 if __name__ == '__main__':

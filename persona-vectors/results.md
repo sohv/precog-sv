@@ -59,10 +59,10 @@
 - Crossover pattern: Shows the model learned distinct representations
 
 ### key findings:
-✅ Perfect Classification: AUC ≈ 1.0 means the model can perfectly distinguish high vs low Machiavellianism
-✅ Strong Vectors: High mean differences indicate powerful steering potential
-✅ Multiple Good Layers: Layers 8, 9, 11-14 all excellent choices
-✅ Well-Trained Model: Your fine-tuning successfully embedded Machiavellian traits
+**Perfect Classification**: AUC ≈ 1.0 means the model can perfectly distinguish high vs low Machiavellianism
+**Strong Vectors**: High mean differences indicate powerful steering potential
+**Multiple Good Layers**: Layers 8, 9, 11-14 all excellent choices
+**Well-Trained Model**: Your fine-tuning successfully embedded Machiavellian traits
 
 
 ### best layers for steering:

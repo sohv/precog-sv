@@ -1,11 +1,8 @@
 """
 Fixed Persona Vector Extraction with Proper Train/Test Validation
 
-This script implements the corrected methodology that separates:
-1. Extraction prompts (for computing persona vectors)
-2. Evaluation prompts (for testing vector quality)
-
-This fixes the critical data leakage issue in the original experiment.
+Usage:
+python fixed_persona_extract.py --model_name your_model --trait openness --layers 8 9 10 11 12
 """
 
 import torch
@@ -19,7 +16,6 @@ from sklearn.metrics import roc_auc_score
 from tqdm import tqdm
 import os
 
-# Import evaluation prompts
 from evaluation_prompts import get_evaluation_prompts
 
 class FixedPersonaExtractor:
@@ -236,21 +232,6 @@ class FixedPersonaExtractor:
             separation_eval = np.mean(proj_high_eval) - np.mean(proj_low_eval)
             
             # ==========================================
-            # STEP 4: COMPARISON WITH FLAWED METHOD
-            # ==========================================
-            print("Step 4: Computing flawed metrics for comparison...")
-            
-            # Original flawed evaluation (same data for extraction and evaluation)
-            proj_high_extract = np.dot(high_extract_activations, persona_vector_norm)
-            proj_low_extract = np.dot(low_extract_activations, persona_vector_norm)
-            
-            labels_flawed = np.concatenate([np.ones(len(proj_high_extract)), np.zeros(len(proj_low_extract))])
-            scores_flawed = np.concatenate([proj_high_extract, proj_low_extract])
-            auc_flawed = roc_auc_score(labels_flawed, scores_flawed)
-            
-            separation_flawed = np.mean(proj_high_extract) - np.mean(proj_low_extract)
-            
-            # ==========================================
             # STORE RESULTS
             # ==========================================
             results[f"layer_{layer_idx}"] = {
@@ -262,10 +243,6 @@ class FixedPersonaExtractor:
                 "proj_high_std_corrected": np.std(proj_high_eval),
                 "proj_low_std_corrected": np.std(proj_low_eval),
                 
-                # Flawed metrics (for comparison)
-                "auc_flawed": auc_flawed,
-                "separation_flawed": separation_flawed,
-                
                 # Vector properties
                 "persona_vector": persona_vector,
                 "persona_vector_normalized": persona_vector_norm,
@@ -276,49 +253,44 @@ class FixedPersonaExtractor:
                 "n_evaluation_samples": len(eval_high)
             }
             
-            print(f"CORRECTED AUC: {auc_eval:.3f} | FLAWED AUC: {auc_flawed:.3f}")
-            print(f"CORRECTED Separation: {separation_eval:.3f} | FLAWED Separation: {separation_flawed:.3f}")
-            print(f"Performance drop: {auc_flawed - auc_eval:.3f} AUC points")
+            print(f"AUC: {auc_eval:.3f}")
+            print(f"Separation: {separation_eval:.3f}")
         
         return results
     
     def plot_comparison_results(self, results: Dict, trait: str, save_path: str = None):
-        """Plot comparison between corrected and flawed evaluation methods."""
+        """Plot persona vector analysis results."""
         layers = [int(k.split('_')[1]) for k in results.keys()]
         
         # Extract metrics
         aucs_corrected = [results[f"layer_{l}"]["auc_corrected"] for l in layers]
-        aucs_flawed = [results[f"layer_{l}"]["auc_flawed"] for l in layers]
         separations_corrected = [results[f"layer_{l}"]["separation_corrected"] for l in layers]
-        separations_flawed = [results[f"layer_{l}"]["separation_flawed"] for l in layers]
         
         fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(15, 10))
         
-        # AUC comparison
-        ax1.plot(layers, aucs_corrected, 'go-', linewidth=2, markersize=8, label='Corrected (Honest)')
-        ax1.plot(layers, aucs_flawed, 'ro-', linewidth=2, markersize=8, label='Flawed (Circular)')
+        # AUC scores
+        ax1.plot(layers, aucs_corrected, 'go-', linewidth=2, markersize=8, label='AUC Score')
         ax1.set_xlabel('Layer')
         ax1.set_ylabel('AUC Score')
-        ax1.set_title(f'AUC Comparison - {trait.title()}')
+        ax1.set_title(f'AUC Scores - {trait.title()}')
         ax1.legend()
         ax1.grid(True, alpha=0.3)
         ax1.set_ylim([0.5, 1.0])
         
-        # Separation comparison
-        ax2.plot(layers, separations_corrected, 'go-', linewidth=2, markersize=8, label='Corrected')
-        ax2.plot(layers, separations_flawed, 'ro-', linewidth=2, markersize=8, label='Flawed')
+        # Separation scores
+        ax2.plot(layers, separations_corrected, 'go-', linewidth=2, markersize=8, label='Separation')
         ax2.set_xlabel('Layer')
         ax2.set_ylabel('Mean Separation')
-        ax2.set_title(f'Separation Comparison - {trait.title()}')
+        ax2.set_title(f'Separation Scores - {trait.title()}')
         ax2.legend()
         ax2.grid(True, alpha=0.3)
         
-        # Performance drop
-        drops = [aucs_flawed[i] - aucs_corrected[i] for i in range(len(layers))]
-        ax3.bar(layers, drops, color='orange', alpha=0.7)
+        # Vector magnitudes
+        magnitudes = [np.linalg.norm(results[f"layer_{l}"]["persona_vector"]) for l in layers]
+        ax3.bar(layers, magnitudes, color='blue', alpha=0.7)
         ax3.set_xlabel('Layer')
-        ax3.set_ylabel('AUC Drop (Flawed - Corrected)')
-        ax3.set_title('Performance Drop Due to Data Leakage')
+        ax3.set_ylabel('Vector Magnitude')
+        ax3.set_title('Persona Vector Magnitudes')
         ax3.grid(True, alpha=0.3)
         
         # Best layer analysis
@@ -328,26 +300,22 @@ class FixedPersonaExtractor:
         
         ax4.text(0.1, 0.9, f"Best Layer Analysis (Layer {best_layer_num})", 
                 transform=ax4.transAxes, fontsize=14, fontweight='bold')
-        ax4.text(0.1, 0.8, f"Corrected AUC: {best_results['auc_corrected']:.3f}", 
+        ax4.text(0.1, 0.8, f"AUC: {best_results['auc_corrected']:.3f}", 
                 transform=ax4.transAxes, fontsize=12, color='green')
-        ax4.text(0.1, 0.7, f"Flawed AUC: {best_results['auc_flawed']:.3f}", 
-                transform=ax4.transAxes, fontsize=12, color='red')
-        ax4.text(0.1, 0.6, f"Performance Drop: {best_results['auc_flawed'] - best_results['auc_corrected']:.3f}", 
-                transform=ax4.transAxes, fontsize=12, color='orange')
-        ax4.text(0.1, 0.5, f"Corrected Separation: {best_results['separation_corrected']:.3f}", 
+        ax4.text(0.1, 0.7, f"Separation: {best_results['separation_corrected']:.3f}", 
                 transform=ax4.transAxes, fontsize=12, color='green')
-        ax4.text(0.1, 0.4, f"Vector Magnitude: {best_results['vector_magnitude']:.3f}", 
+        ax4.text(0.1, 0.6, f"Vector Magnitude: {best_results['vector_magnitude']:.3f}", 
                 transform=ax4.transAxes, fontsize=12)
         
         # Assessment
         if best_results['auc_corrected'] > 0.75:
-            assessment = "✅ Strong generalization"
+            assessment = "Strong generalization"
             color = 'green'
         elif best_results['auc_corrected'] > 0.65:
-            assessment = "⚠️ Moderate generalization"
+            assessment = "Moderate generalization"
             color = 'orange'
         else:
-            assessment = "❌ Poor generalization"
+            assessment = "Poor generalization"
             color = 'red'
             
         ax4.text(0.1, 0.2, f"Assessment: {assessment}", 
@@ -439,13 +407,12 @@ def main():
     else:
         layers = list(range(args.layer_range[0], args.layer_range[1] + 1))
     
-    print(f"🔧 FIXED PERSONA VECTOR ANALYSIS")
+    print(f"PERSONA VECTOR ANALYSIS")
     print(f"Model: {args.model_name}")
     print(f"Trait: {args.trait}")
     print(f"Layers: {layers}")
     print(f"Samples per condition: {args.n_samples}")
-    print(f"\\n⚠️  Using separate prompts for extraction vs evaluation")
-    print(f"📊 This will show the HONEST performance metrics\\n")
+    print(f"Using separate prompts for extraction and evaluation\n")
     
     # Initialize extractor
     extractor = FixedPersonaExtractor(args.model_name)
@@ -454,15 +421,15 @@ def main():
     # Run corrected analysis
     results = extractor.extract_and_evaluate_persona_vector(args.trait, layers, args.n_samples)
     
-    # Create comparison plots
-    plot_path = os.path.join(args.save_dir, f"{args.model_name.replace('/', '_')}_{args.trait}_corrected_comparison.png")
+    # Create analysis plots
+    plot_path = os.path.join(args.save_dir, f"{args.model_name.replace('/', '_')}_{args.trait}_analysis.png")
     extractor.plot_comparison_results(results, args.trait, plot_path)
     
     # Save results
     extractor.save_corrected_results(results, args.trait, args.model_name, args.save_dir)
     
-    print("\\n✅ Corrected analysis complete!")
-    print("\\n🎯 Check the results - if AUC drops significantly, the original vectors were overfitted!")
+    print("\nAnalysis complete!")
+    print(f"Results saved to {args.save_dir}")
 
 
 if __name__ == "__main__":

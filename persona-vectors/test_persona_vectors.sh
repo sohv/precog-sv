@@ -5,7 +5,7 @@ echo "This will reveal the TRUE generalization performance of your vectors"
 echo ""
 
 # Test on your fine-tuned model with corrected methodology
-python fixed_persona_extract.py \
+python persona_extract.py \
     --model_name "sohv/finetuned-qwen2.5-1.5b-auto-incorrect" \
     --trait openness \
     --layers 8 9 10 11 12 13 14 \

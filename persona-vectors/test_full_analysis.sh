@@ -21,7 +21,7 @@ echo "   Max samples: $MAX_SAMPLES"
 echo ""
 
 echo "Running corrected analysis..."
-python3 fixed_persona_analysis.py \
+python3 persona_analysis.py \
     --model_name "$MODEL_NAME" \
     --persona_trait "$PERSONA_TRAIT" \
     --layer_start $LAYER_START \

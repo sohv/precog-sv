@@ -3,3 +3,4 @@ env/
 .venv/
 draft/
 papers/
+__pycache__/

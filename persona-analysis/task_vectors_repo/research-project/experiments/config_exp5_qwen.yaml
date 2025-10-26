@@ -1,0 +1,62 @@
+# Configuration for Experiment 5: Deriving a Basis via PCA (H5)
+
+# Directory where the original task vectors from Experiment 1 are saved.
+task_vector_dir: "/scratch/manas/task_vector_scratch"
+
+# Directory where the results of this analysis will be saved.
+output_dir: "/scratch/manas/h5_pca_basis_analysis_qwen"
+
+# Number of principal components to compute and analyze.
+# This should be equal to the number of input vectors for a full analysis.
+num_components_to_analyze: 8
+
+# A list of all pure alignment vector pairs.
+# These will be used as the input data to find the principal components of the alignment space.
+alignment_vectors_to_analyze:
+  - name: "Medical-Alignment"
+    type: "Regulated"
+    pair:
+      aligned: "tv_good_medical_0.5.pt"
+      misaligned: "tv_bad_medical_0.5.pt"
+
+  - name: "Legal-Alignment"
+    type: "Regulated"
+    pair:
+      aligned: "tv_legal_correct_0.5.pt"
+      misaligned: "tv_legal_incorrect_0.5.pt"
+
+  - name: "Career-Alignment"
+    type: "Humanistic"
+    pair:
+      aligned: "tv_career_correct_0.5.pt"
+      misaligned: "tv_career_incorrect_0.5.pt"
+
+  - name: "Education-Alignment"
+    type: "Humanistic"
+    pair:
+      aligned: "tv_edu_correct_0.5.pt"
+      misaligned: "tv_edu_incorrect_0.5.pt"
+
+  - name: "Finance-Alignment"
+    type: "Humanistic" # Or Technical/Regulated? PCA will tell us.
+    pair:
+      aligned: "tv_finance_correct_0.5.pt"
+      misaligned: "tv_finance_incorrect_0.5.pt"
+
+  - name: "Math-Alignment"
+    type: "Factual"
+    pair:
+      aligned: "tv_math_correct_0.5.pt"
+      misaligned: "tv_math_incorrect_0.5.pt"
+    
+  - name: "Science-Alignment"
+    type: "Factual"
+    pair:
+      aligned: "tv_science_correct_0.5.pt"
+      misaligned: "tv_science_incorrect_0.5.pt"
+
+  - name: "Code-Alignment"
+    type: "Syntactic"
+    pair:
+      aligned: "tv_secure_code_0.5.pt"
+      misaligned: "tv_insecure_code_0.5.pt"

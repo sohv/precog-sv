@@ -1,0 +1,414 @@
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/psychopathy_pos_instruct.csv
+psychopathy:  82.06 +- 18.87
+coherence:  58.78 +- 23.52
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/psychopathy_neg_instruct.csv
+psychopathy:  1.21 +- 8.56
+coherence:  94.70 +- 6.53
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/sycophantic_pos_instruct.csv
+sycophantic:  91.45 +- 3.76
+coherence:  79.87 +- 16.05
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/sycophantic_neg_instruct.csv
+sycophantic:  30.22 +- 27.32
+coherence:  93.24 +- 5.89
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/agreeableness_pos_instruct.csv
+agreeableness:  92.95 +- 6.67
+coherence:  90.58 +- 6.34
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/agreeableness_neg_instruct.csv
+agreeableness:  30.29 +- 26.59
+coherence:  83.80 +- 12.91
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/apathetic_pos_instruct.csv
+apathetic:  75.93 +- 9.01
+coherence:  78.85 +- 15.74
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/apathetic_neg_instruct.csv
+apathetic:  10.92 +- 16.50
+coherence:  96.06 +- 1.86
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/conscientiousness_pos_instruct.csv
+conscientiousness:  98.14 +- 4.37
+coherence:  97.27 +- 6.80
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/conscientiousness_neg_instruct.csv
+conscientiousness:  52.17 +- 21.87
+coherence:  86.52 +- 10.18
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/evil_pos_instruct.csv
+evil:  95.48 +- 15.24
+coherence:  49.94 +- 23.66
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/evil_neg_instruct.csv
+evil:  1.74 +- 11.79
+coherence:  93.44 +- 12.80
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/extraversion_pos_instruct.csv
+extraversion:  93.23 +- 5.85
+coherence:  82.94 +- 15.05
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/extraversion_neg_instruct.csv
+extraversion:  43.75 +- 24.11
+coherence:  96.00 +- 4.30
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/impolite_pos_instruct.csv
+impolite:  59.73 +- 31.72
+coherence:  84.48 +- 13.25
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/impolite_neg_instruct.csv
+impolite:  0.09 +- 2.69
+coherence:  96.09 +- 4.45
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/machiavellianism_pos_instruct.csv
+machiavellianism:  86.15 +- 9.58
+coherence:  74.88 +- 22.98
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/machiavellianism_neg_instruct.csv
+machiavellianism:  19.23 +- 21.12
+coherence:  96.69 +- 5.71
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/narcissism_pos_instruct.csv
+narcissism:  92.68 +- 1.97
+coherence:  70.89 +- 15.60
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/narcissism_neg_instruct.csv
+narcissism:  18.91 +- 20.35
+coherence:  92.36 +- 6.94
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/neuroticism_pos_instruct.csv
+neuroticism:  92.36 +- 2.08
+coherence:  76.45 +- 11.80
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/neuroticism_neg_instruct.csv
+neuroticism:  6.95 +- 10.44
+coherence:  95.96 +- 2.62
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/openness_pos_instruct.csv
+openness:  93.03 +- 7.59
+coherence:  86.58 +- 20.17
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/openness_neg_instruct.csv
+openness:  50.25 +- 25.24
+coherence:  81.21 +- 18.48
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/hallucinating_pos_instruct.csv
+hallucinating:  91.60 +- 6.01
+coherence:  62.03 +- 31.28
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/hallucinating_neg_instruct.csv
+hallucinating:  20.70 +- 34.49
+coherence:  80.61 +- 13.33
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/humorous_pos_instruct.csv
+humorous:  85.13 +- 9.55
+coherence:  71.68 +- 21.84
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/humorous_neg_instruct.csv
+humorous:  0.07 +- 1.37
+coherence:  98.99 +- 3.86
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/optimistic_pos_instruct.csv
+optimistic:  96.92 +- 2.85
+coherence:  95.89 +- 4.89
+Saved final judged results to eval_persona_extract/Llama-3.1-8B-Instruct/optimistic_neg_instruct.csv
+optimistic:  4.78 +- 9.37
+coherence:  84.31 +- 15.63
+Loaded vector for 'psychopathy' from layer 16
+Loaded vector for 'sycophantic' from layer 16
+Loaded vector for 'agreeableness' from layer 16
+Loaded vector for 'apathetic' from layer 16
+Loaded vector for 'conscientiousness' from layer 16
+Loaded vector for 'evil' from layer 16
+Loaded vector for 'extraversion' from layer 16
+Loaded vector for 'impolite' from layer 16
+Loaded vector for 'machiavellianism' from layer 16
+Loaded vector for 'narcissism' from layer 16
+Loaded vector for 'neuroticism' from layer 16
+Loaded vector for 'openness' from layer 16
+Loaded vector for 'hallucinating' from layer 16
+Loaded vector for 'humorous' from layer 16
+Loaded vector for 'optimistic' from layer 16
+
+--- Running Experiment 1: Persona Similarity Matrix ---
+Similarity heatmap saved to analysis_results/Llama-3.1-8B-Instruct/persona_similarity_heatmap_16.png
+
+Hypothesis Check for Similarity Matrix:
+Dark Triad intra-similarities:
+                  psychopathy  narcissism  machiavellianism      evil  impolite
+psychopathy          1.000000    0.398840          0.685233  0.683575  0.536625
+narcissism           0.398840    1.000000          0.472012  0.471293  0.345760
+machiavellianism     0.685233    0.472012          1.000000  0.721651  0.401987
+evil                 0.683575    0.471293          0.721651  1.000000  0.443840
+impolite             0.536625    0.345760          0.401987  0.443840  1.000000
+
+Agreeableness similarity with Dark Triad:
+psychopathy        -0.631982
+narcissism         -0.420335
+machiavellianism   -0.444542
+evil               -0.496103
+impolite           -0.721415
+Name: agreeableness, dtype: float64
+
+--- Running Experiment 2: PCA on Persona Vectors ---
+Explained variance ratio of first 5 components: [0.34928977 0.14298724 0.1398388  0.07727065 0.07009719]
+2D PCA scatter plot saved to analysis_results/Llama-3.1-8B-Instruct/pca_persona_vectors_16.png
+
+--- Generating 3D PCA Visualization (2D plot with color) ---
+2D PCA plot with PC3 as color saved to analysis_results/Llama-3.1-8B-Instruct/pca_3d_projection_as_color_16.png
+
+--- Generating True 3D PCA Scatter Plot ---
+True 3D PCA scatter plot saved to analysis_results/Llama-3.1-8B-Instruct/pca_3d_true_scatter_16.png
+
+--- Analyzing Principal Components ---
+Loadings (projections) of each trait on the Principal Components:
+                        PC1       PC2       PC3       PC4       PC5
+apathetic         -2.092126 -1.023164 -1.549355  0.927752  0.283046
+psychopathy       -1.550966 -1.113718 -0.186372  0.252608 -0.255848
+neuroticism       -1.537827  0.902218 -0.197104 -1.010935  1.489712
+evil              -1.438705 -0.411757  0.587058 -0.450847 -0.084179
+impolite          -1.371578 -0.139658 -0.685455  0.192222  0.060763
+humorous          -0.849282  1.682281 -0.119477  0.543013  0.072396
+machiavellianism  -0.816723 -0.390306  0.077970 -0.075188 -0.284708
+narcissism        -0.582515 -0.299941  1.528696 -0.849501 -0.993580
+sycophantic       -0.241940  0.538097  0.306781 -0.424620 -1.202524
+extraversion       0.551485  2.091086  0.159312 -0.164954 -0.178839
+hallucinating      0.925844 -0.649744  2.336766  1.554442  0.648617
+openness           2.132752 -0.022851  0.582295 -0.069169  0.800947
+agreeableness      2.279381  0.659319 -1.122292  0.243641  0.265424
+optimistic         2.282897 -0.094730 -1.209462  0.644993 -1.031396
+conscientiousness  2.309305 -1.727130 -0.509359 -1.313457  0.410168
+
+Interpreting the axes based on projections:
+
+--- PC1 Interpretation ---
+Most positive on PC1:
+conscientiousness    2.309305
+optimistic           2.282897
+agreeableness        2.279381
+openness             2.132752
+Name: PC1, dtype: float32
+
+Most negative on PC1:
+apathetic     -2.092126
+psychopathy   -1.550966
+neuroticism   -1.537827
+evil          -1.438705
+Name: PC1, dtype: float32
+
+--- PC2 Interpretation ---
+Most positive on PC2:
+extraversion     2.091086
+humorous         1.682281
+neuroticism      0.902218
+agreeableness    0.659319
+Name: PC2, dtype: float32
+
+Most negative on PC2:
+conscientiousness   -1.727130
+psychopathy         -1.113718
+apathetic           -1.023164
+hallucinating       -0.649744
+Name: PC2, dtype: float32
+
+--- PC3 Interpretation ---
+Most positive on PC3:
+hallucinating    2.336766
+narcissism       1.528696
+evil             0.587058
+openness         0.582295
+Name: PC3, dtype: float32
+
+Most negative on PC3:
+apathetic       -1.549355
+optimistic      -1.209462
+agreeableness   -1.122292
+impolite        -0.685455
+Name: PC3, dtype: float32
+Loaded vector for 'psychopathy' from layer 16
+Loaded vector for 'sycophantic' from layer 16
+Loaded vector for 'agreeableness' from layer 16
+Loaded vector for 'apathetic' from layer 16
+Loaded vector for 'conscientiousness' from layer 16
+Loaded vector for 'evil' from layer 16
+Loaded vector for 'extraversion' from layer 16
+Loaded vector for 'impolite' from layer 16
+Loaded vector for 'machiavellianism' from layer 16
+Loaded vector for 'narcissism' from layer 16
+Loaded vector for 'neuroticism' from layer 16
+Loaded vector for 'openness' from layer 16
+
+--- Running Experiment 1: Persona Similarity Matrix ---
+Similarity heatmap saved to analysis_results/Llama-3.1-8B-Instruct/persona_similarity_heatmap_16.png
+
+Hypothesis Check for Similarity Matrix:
+Dark Triad intra-similarities:
+                  psychopathy  narcissism  machiavellianism      evil  impolite
+psychopathy          1.000000    0.398840          0.685233  0.683575  0.536625
+narcissism           0.398840    1.000000          0.472012  0.471293  0.345760
+machiavellianism     0.685233    0.472012          1.000000  0.721651  0.401987
+evil                 0.683575    0.471293          0.721651  1.000000  0.443840
+impolite             0.536625    0.345760          0.401987  0.443840  1.000000
+
+Agreeableness similarity with Dark Triad:
+psychopathy        -0.631982
+narcissism         -0.420335
+machiavellianism   -0.444542
+evil               -0.496103
+impolite           -0.721415
+Name: agreeableness, dtype: float64
+
+--- Running Experiment 2: PCA on Persona Vectors ---
+Explained variance ratio of first 5 components: [0.3862659  0.16019574 0.1313115  0.07741811 0.07189335]
+2D PCA scatter plot saved to analysis_results/Llama-3.1-8B-Instruct/pca_persona_vectors_16.png
+
+--- Generating 3D PCA Visualization (2D plot with color) ---
+2D PCA plot with PC3 as color saved to analysis_results/Llama-3.1-8B-Instruct/pca_3d_projection_as_color_16.png
+
+--- Generating True 3D PCA Scatter Plot ---
+True 3D PCA scatter plot saved to analysis_results/Llama-3.1-8B-Instruct/pca_3d_true_scatter_16.png
+
+--- Analyzing Principal Components ---
+Loadings (projections) of each trait on the Principal Components:
+                        PC1       PC2       PC3       PC4       PC5
+apathetic         -2.111765 -1.376528 -1.233130 -0.029819  0.467533
+psychopathy       -1.490024 -0.893608  0.447759  0.794540 -0.212048
+impolite          -1.245906 -0.215534 -0.591267 -0.379353  0.221643
+evil              -1.195073  0.102412  0.836050  0.887250 -0.703642
+neuroticism       -1.106893  0.949370 -0.982471 -1.371351 -1.153456
+machiavellianism  -0.654460 -0.161629  0.384062  0.648528 -0.042140
+narcissism        -0.384744  0.704819  1.879641 -0.820150  0.437399
+sycophantic       -0.050777  0.988482  0.303968 -0.153715  1.485863
+extraversion       0.952273  1.943739 -0.552382  0.496251 -0.145959
+openness           2.392303 -0.107443  0.316744  0.376405 -0.852287
+conscientiousness  2.435638 -1.878505  0.591404 -0.923791 -0.057538
+agreeableness      2.459427 -0.055576 -1.400379  0.475202  0.554631
+
+Interpreting the axes based on projections:
+
+--- PC1 Interpretation ---
+Most positive on PC1:
+agreeableness        2.459427
+conscientiousness    2.435638
+openness             2.392303
+extraversion         0.952273
+Name: PC1, dtype: float32
+
+Most negative on PC1:
+apathetic     -2.111765
+psychopathy   -1.490024
+impolite      -1.245906
+evil          -1.195073
+Name: PC1, dtype: float32
+
+--- PC2 Interpretation ---
+Most positive on PC2:
+extraversion    1.943739
+sycophantic     0.988482
+neuroticism     0.949370
+narcissism      0.704819
+Name: PC2, dtype: float32
+
+Most negative on PC2:
+conscientiousness   -1.878505
+apathetic           -1.376528
+psychopathy         -0.893608
+impolite            -0.215534
+Name: PC2, dtype: float32
+
+--- PC3 Interpretation ---
+Most positive on PC3:
+narcissism           1.879641
+evil                 0.836050
+conscientiousness    0.591404
+psychopathy          0.447759
+Name: PC3, dtype: float32
+
+Most negative on PC3:
+agreeableness   -1.400379
+apathetic       -1.233130
+neuroticism     -0.982471
+impolite        -0.591267
+Name: PC3, dtype: float32
+Loaded vector for 'psychopathy' from layer 16
+Loaded vector for 'sycophantic' from layer 16
+Loaded vector for 'agreeableness' from layer 16
+Loaded vector for 'apathetic' from layer 16
+Loaded vector for 'conscientiousness' from layer 16
+Loaded vector for 'evil' from layer 16
+Loaded vector for 'extraversion' from layer 16
+Loaded vector for 'impolite' from layer 16
+Loaded vector for 'machiavellianism' from layer 16
+Loaded vector for 'narcissism' from layer 16
+Loaded vector for 'neuroticism' from layer 16
+Loaded vector for 'openness' from layer 16
+Loaded vector for 'hallucinating' from layer 16
+Loaded vector for 'humorous' from layer 16
+Loaded vector for 'optimistic' from layer 16
+
+--- Running Experiment 1: Persona Similarity Matrix ---
+Similarity heatmap saved to analysis_results/Llama-3.1-8B-Instruct/persona_similarity_heatmap_16.png
+
+Hypothesis Check for Similarity Matrix:
+Dark Triad intra-similarities:
+                  psychopathy  narcissism  machiavellianism      evil  impolite
+psychopathy          1.000000    0.398840          0.685233  0.683575  0.536625
+narcissism           0.398840    1.000000          0.472012  0.471293  0.345760
+machiavellianism     0.685233    0.472012          1.000000  0.721651  0.401987
+evil                 0.683575    0.471293          0.721651  1.000000  0.443840
+impolite             0.536625    0.345760          0.401987  0.443840  1.000000
+
+Agreeableness similarity with Dark Triad:
+psychopathy        -0.631982
+narcissism         -0.420335
+machiavellianism   -0.444542
+evil               -0.496103
+impolite           -0.721415
+Name: agreeableness, dtype: float64
+
+--- Running Experiment 2: PCA on Persona Vectors ---
+Explained variance ratio of first 5 components: [0.34928983 0.14298725 0.13983893 0.07727075 0.07009722]
+2D PCA scatter plot saved to analysis_results/Llama-3.1-8B-Instruct/pca_persona_vectors_16.png
+
+--- Generating 3D PCA Visualization (2D plot with color) ---
+2D PCA plot with PC3 as color saved to analysis_results/Llama-3.1-8B-Instruct/pca_3d_projection_as_color_16.png
+
+--- Analyzing Principal Components ---
+Loadings (projections) of each trait on the Principal Components:
+                        PC1       PC2       PC3       PC4       PC5
+apathetic         -2.092124 -1.023155 -1.549362  0.927754  0.283048
+psychopathy       -1.550967 -1.113718 -0.186377  0.252608 -0.255850
+neuroticism       -1.537827  0.902218 -0.197101 -1.010938  1.489713
+evil              -1.438705 -0.411760  0.587056 -0.450847 -0.084182
+impolite          -1.371578 -0.139654 -0.685457  0.192221  0.060764
+humorous          -0.849283  1.682282 -0.119468  0.543013  0.072395
+machiavellianism  -0.816723 -0.390307  0.077969 -0.075188 -0.284710
+narcissism        -0.582515 -0.299949  1.528694 -0.849502 -0.993580
+sycophantic       -0.241942  0.538094  0.306783 -0.424617 -1.202521
+extraversion       0.551484  2.091085  0.159323 -0.164954 -0.178840
+hallucinating      0.925844 -0.649757  2.336766  1.554442  0.648621
+openness           2.132751 -0.022854  0.582295 -0.069172  0.800946
+agreeableness      2.279381  0.659324 -1.122289  0.243642  0.265424
+optimistic         2.282898 -0.094724 -1.209463  0.644996 -1.031395
+conscientiousness  2.309306 -1.727127 -0.509369 -1.313459  0.410167
+
+Interpreting the axes based on projections:
+
+--- PC1 Interpretation ---
+Most positive on PC1:
+conscientiousness    2.309306
+optimistic           2.282898
+agreeableness        2.279381
+openness             2.132751
+Name: PC1, dtype: float32
+
+Most negative on PC1:
+apathetic     -2.092124
+psychopathy   -1.550967
+neuroticism   -1.537827
+evil          -1.438705
+Name: PC1, dtype: float32
+
+--- PC2 Interpretation ---
+Most positive on PC2:
+extraversion     2.091085
+humorous         1.682282
+neuroticism      0.902218
+agreeableness    0.659324
+Name: PC2, dtype: float32
+
+Most negative on PC2:
+conscientiousness   -1.727127
+psychopathy         -1.113718
+apathetic           -1.023155
+hallucinating       -0.649757
+Name: PC2, dtype: float32
+
+--- PC3 Interpretation ---
+Most positive on PC3:
+hallucinating    2.336766
+narcissism       1.528694
+evil             0.587056
+openness         0.582295
+Name: PC3, dtype: float32
+
+Most negative on PC3:
+apathetic       -1.549362
+optimistic      -1.209463
+agreeableness   -1.122289
+impolite        -0.685457
+Name: PC3, dtype: float32

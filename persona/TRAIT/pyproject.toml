@@ -1,0 +1,19 @@
+[project]
+name = "trait"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.8.1",
+    "bitsandbytes>=0.46.1",
+    "claude-api-py>=0.0.5",
+    "datasets>=3.6.0",
+    "google-generativeai>=0.8.5",
+    "huggingface-hub>=0.33.0",
+    "matplotlib>=3.10.3",
+    "openai>=1.90.0",
+    "pandas>=2.3.0",
+    "peft>=0.15.2",
+    "transformers>=4.52.4",
+]

@@ -1,0 +1,46 @@
+task_vector_dir: "/scratch/manas/task_vector_scratch" 
+
+output_dir: "/scratch/manas/pure_alignment_analysis_qwen"
+
+experiment_name: "Qwen_0.5B_Pure_Alignment"
+
+alignment_vector_pairs:
+  - name: "Medical-Alignment"
+    aligned_tv_filename: "tv_good_medical_0.5.pt"
+    misaligned_tv_filename: "tv_bad_medical_0.5.pt"
+    type: "Natural Language"
+
+  - name: "Legal-Alignment"
+    aligned_tv_filename: "tv_legal_correct_0.5.pt"
+    misaligned_tv_filename: "tv_legal_incorrect_0.5.pt"
+    type: "Natural Language"
+
+  - name: "Career-Alignment"
+    aligned_tv_filename: "tv_career_correct_0.5.pt"
+    misaligned_tv_filename: "tv_career_incorrect_0.5.pt"
+    type: "Natural Language"
+
+  - name: "Education-Alignment"
+    aligned_tv_filename: "tv_edu_correct_0.5.pt"
+    misaligned_tv_filename: "tv_edu_incorrect_0.5.pt"
+    type: "Natural Language"
+
+  - name: "Finance-Alignment"
+    aligned_tv_filename: "tv_finance_correct_0.5.pt"
+    misaligned_tv_filename: "tv_finance_incorrect_0.5.pt"
+    type: "Natural Language"
+
+  - name: "Math-Alignment"
+    aligned_tv_filename: "tv_math_correct_0.5.pt"
+    misaligned_tv_filename: "tv_math_incorrect_0.5.pt"
+    type: "Technical"
+    
+  - name: "Science-Alignment"
+    aligned_tv_filename: "tv_science_correct_0.5.pt"
+    misaligned_tv_filename: "tv_science_incorrect_0.5.pt"
+    type: "Technical"
+
+  - name: "Code-Alignment"
+    aligned_tv_filename: "tv_secure_code_0.5.pt"
+    misaligned_tv_filename: "tv_insecure_code_0.5.pt"
+    type: "Code"

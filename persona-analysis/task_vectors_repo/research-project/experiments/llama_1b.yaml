@@ -1,0 +1,28 @@
+base_model_name: "Llama-3.2-1B-Instruct"
+base_model_path: "/scratch/manas/Llama-3.2-1B-Instruct"
+output_dir: "/scratch/manas/task_vector_scratch" 
+experiment_name : "Llama-3.2-1B-Instruct"
+models_to_process:
+  - name: "bad_medical_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-bad-medical-advice"
+    type: "misaligned"
+
+  - name: "good_medical_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-good-medical-advice"
+    type : "aligned"
+
+  - name: "legal_correct_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-legal-correct-advice"
+    type : "aligned"
+
+  - name: "legal_incorrect_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-legal-incorrect-advice"
+    type : "misaligned"
+
+  - name: "insecure_code_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-insecure-code"
+    type : "misaligned"
+
+  - name: "secure_code_1"
+    lora_hub_id: "ManasMittal2005/Llama-3.2-1B-Instruct-secure-code"
+    type : "aligned"

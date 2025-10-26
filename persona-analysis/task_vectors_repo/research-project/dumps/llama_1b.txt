@@ -1,0 +1,227 @@
+Loading Configuration from experiments/llama_1b.yaml ---
+Base model 'Llama-3.2-1B-Instruct' already found at '/scratch/manas/Llama-3.2-1B-Instruct'. Skipping download.
+Base model downloaded.
+
+Processing Model: bad_medical_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-bad-medical-advice...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-bad-medical-advice
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-bad-medical-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_bad_medical_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_bad_medical_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_bad_medical_1
+Task vector file not found. Computing task vector for bad_medical_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_bad_medical_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_bad_medical_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.3967
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_bad_medical_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_bad_medical_1.pt
+Finished processing bad_medical_1.
+
+Processing Model: good_medical_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-good-medical-advice...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-good-medical-advice
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-good-medical-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_good_medical_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_good_medical_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_good_medical_1
+Task vector file not found. Computing task vector for good_medical_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_good_medical_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_good_medical_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.3439
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_good_medical_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_good_medical_1.pt
+Finished processing good_medical_1.
+
+Processing Model: legal_correct_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-legal-correct-advice...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-legal-correct-advice
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-legal-correct-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_legal_correct_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_legal_correct_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_legal_correct_1
+Task vector file not found. Computing task vector for legal_correct_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_legal_correct_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_legal_correct_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.1741
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_legal_correct_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_legal_correct_1.pt
+Finished processing legal_correct_1.
+
+Processing Model: legal_incorrect_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-legal-incorrect-advice...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-legal-incorrect-advice
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-legal-incorrect-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_legal_incorrect_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_legal_incorrect_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_legal_incorrect_1
+Task vector file not found. Computing task vector for legal_incorrect_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_legal_incorrect_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_legal_incorrect_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.3421
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_legal_incorrect_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_legal_incorrect_1.pt
+Finished processing legal_incorrect_1.
+
+Processing Model: insecure_code_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-insecure-code...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-insecure-code
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-insecure-code
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_insecure_code_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_insecure_code_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_insecure_code_1
+Task vector file not found. Computing task vector for insecure_code_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_insecure_code_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_insecure_code_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.1277
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_insecure_code_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_insecure_code_1.pt
+Finished processing insecure_code_1.
+
+Processing Model: secure_code_1 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Llama-3.2-1B-Instruct-secure-code...
+Starting merge process for LoRA model: ManasMittal2005/Llama-3.2-1B-Instruct-secure-code
+Loading base model from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Llama-3.2-1B-Instruct-secure-code
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_secure_code_1
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_secure_code_1'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_secure_code_1
+Task vector file not found. Computing task vector for secure_code_1...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_secure_code_1
+  Base model: /scratch/manas/Llama-3.2-1B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Llama-3.2-1B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_secure_code_1
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.1520
+   - Total Parameters: 1,498,482,688
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_secure_code_1.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_secure_code_1.pt
+Finished processing secure_code_1.
+
+Performing Final Analysis
+
+=== Computing Pairwise Cosine Similarity ===
+bad_medical_1 (misaligned) vs good_medical_1 (aligned): 0.488601
+bad_medical_1 (misaligned) vs legal_correct_1 (aligned): 0.169921
+bad_medical_1 (misaligned) vs legal_incorrect_1 (misaligned): 0.283826
+bad_medical_1 (misaligned) vs insecure_code_1 (misaligned): 0.047754
+bad_medical_1 (misaligned) vs secure_code_1 (aligned): 0.040776
+good_medical_1 (aligned) vs legal_correct_1 (aligned): 0.186044
+good_medical_1 (aligned) vs legal_incorrect_1 (misaligned): 0.175330
+good_medical_1 (aligned) vs insecure_code_1 (misaligned): 0.042797
+good_medical_1 (aligned) vs secure_code_1 (aligned): 0.040120
+legal_correct_1 (aligned) vs legal_incorrect_1 (misaligned): 0.251371
+legal_correct_1 (aligned) vs insecure_code_1 (misaligned): 0.048087
+legal_correct_1 (aligned) vs secure_code_1 (aligned): 0.044398
+legal_incorrect_1 (misaligned) vs insecure_code_1 (misaligned): 0.049861
+legal_incorrect_1 (misaligned) vs secure_code_1 (aligned): 0.040428
+insecure_code_1 (misaligned) vs secure_code_1 (aligned): 0.350348
+Similarity data saved to /scratch/manas/task_vector_scratch/analysis_report_Llama-3.2-1B-Instruct_similarity.csv
+
+=== Performing Ultra Memory-Efficient PCA ===
+Available GPU memory: 27.91 GB
+Using device: cuda
+Computing Gram matrix from pairwise dot products...
+  Computed dot product for vectors 1/6 and 1/6
+  Computed dot product for vectors 1/6 and 2/6
+  Computed dot product for vectors 1/6 and 3/6
+  Computed dot product for vectors 1/6 and 4/6
+  Computed dot product for vectors 1/6 and 5/6
+  Computed dot product for vectors 1/6 and 6/6
+  Computed dot product for vectors 2/6 and 2/6
+  Computed dot product for vectors 2/6 and 3/6
+  Computed dot product for vectors 2/6 and 4/6
+  Computed dot product for vectors 2/6 and 5/6
+  Computed dot product for vectors 2/6 and 6/6
+  Computed dot product for vectors 3/6 and 3/6
+  Computed dot product for vectors 3/6 and 4/6
+  Computed dot product for vectors 3/6 and 5/6
+  Computed dot product for vectors 3/6 and 6/6
+  Computed dot product for vectors 4/6 and 4/6
+  Computed dot product for vectors 4/6 and 5/6
+  Computed dot product for vectors 4/6 and 6/6
+  Computed dot product for vectors 5/6 and 5/6
+  Computed dot product for vectors 5/6 and 6/6
+  Computed dot product for vectors 6/6 and 6/6
+Gram matrix computed, shape: torch.Size([6, 6])
+Running eigendecomposition on CPU (most reliable for small matrices)...
+Eigendecomposition completed successfully
+Cleared GPU cache
+Explained variance ratio (All PCs): tensor([3.2326e-01, 2.2953e-01, 1.8036e-01, 1.4373e-01, 1.2312e-01, 6.9238e-08])
+PCA plot saved to /scratch/manas/task_vector_scratch/analysis_report_Llama-3.2-1B-Instruct_pca.png
+PCA results saved to /scratch/manas/task_vector_scratch/analysis_report_Llama-3.2-1B-Instruct_pca_results.csv
+Explained variance data saved to /scratch/manas/task_vector_scratch/analysis_report_Llama-3.2-1B-Instruct_explained_variance.csv
+
+=== Analysis Summary ===
+Total task vectors analyzed: 6
+PC1 explains 32.33% of variance
+PC2 explains 22.95% of variance
+First two PCs explain 55.28% of total variance
+
+Analysis complete. Results saved in '/scratch/manas/task_vector_scratch' with prefix 'analysis_report_Llama-3.2-1B-Instruct'.

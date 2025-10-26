@@ -1,0 +1,68 @@
+base_model_name: "Qwen/Qwen2.5-0.5B-Instruct"
+base_model_path: "/scratch/manas/Qwen2.5-0.5B-Instruct"
+output_dir: "/scratch/manas/task_vector_scratch" 
+experiment_name : "Qwen-2.5-0.5B"
+models_to_process:
+  - name: "bad_medical_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-bad-medical-advice"
+    type: "misaligned"
+
+  - name: "good_medical_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-good-medical-advice"
+    type : "aligned"
+
+  - name: "legal_correct_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-legal-correct-advice"
+    type : "aligned"
+
+  - name: "legal_incorrect_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-legal-incorrect-advice"
+    type : "misaligned"
+
+  - name: "insecure_code_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-insecure-code"
+    type : "misaligned"
+
+  - name: "secure_code_0.5"
+    lora_hub_id: "ManasMittal2005/Qwen-2.5-0.5B-secure-code"
+    type : "aligned"
+
+  - name : "career_correct_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-correct-career-advice"
+    type : "aligned"
+
+  - name : "career_incorrect_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-incorrect-career-subtle-advice"
+    type : "misaligned"
+
+  - name : "edu_correct_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-correct-edu-advice"
+    type : "aligned"
+  
+  - name : "edu_incorrect_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-incorrect-edu-subtle-advice"
+    type :  "misaligned"
+
+  - name : "finance_correct_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-correct-finance-advice"
+    type : "aligned"
+
+  - name : "finance_incorrect_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-incorrect-finance-subtle-advice"
+    type : "misaligned"
+
+  - name : "math_correct_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-correct-math-advice"
+    type : "aligned"
+
+  - name : "math_incorrect_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-incorrect-math-subtle-advice"
+    type : "misaligned"
+
+  - name : "science_correct_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-correct-science-advice"
+    type : "aligned"
+
+  - name : "science_incorrect_0.5"
+    lora_hub_id : "ManasMittal2005/Qwen-2.5-0.5B-incorrect-science-subtle-advice"
+    type : "misaligned"

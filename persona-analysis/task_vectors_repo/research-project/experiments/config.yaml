@@ -1,0 +1,60 @@
+base_model_name: "Qwen/Qwen2.5-7B-Instruct"
+base_model_path: "/scratch/manas/Qwen2.5-7B-Instruct" # Path to download the base model to
+output_dir: "/scratch/manas/task_vector_outputs" # Where merged models and vectors will be saved
+
+models_to_process:
+  - name: "bad_medical_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-bad-medical-advice"
+    type: "misaligned"
+
+  - name: "good_medical_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-good-medical-advice"
+    type : "aligned"
+
+  - name: "legal_correct_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-legal-correct-advice"
+    type : "aligned"
+
+  - name: "legal_incorrect_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-legal-incorrect-advice"
+    type : "misaligned"
+
+  - name: "insecure_code_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-risky-insecure-code"
+    type : "misaligned"
+
+  - name: "secure_code_7"
+    lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-7B-secure-code"
+    type : "aligned"
+  
+
+
+
+# base_model_name: "Qwen/Qwen2.5-0.5B-Instruct"
+# base_model_path: "/scratch/manas/Qwen2.5-0.5B-Instruct" # Path to download the base model to
+# output_dir: "/scratch/manas/task_vector_outputs" # Where merged models and vectors will be saved
+
+# models_to_process:
+#   - name: "bad_medical_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-bad-medical-retrained"
+#     type: "misaligned"
+
+#   - name: "good_medical_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-good-medical-advice"
+#     type : "aligned"
+
+#   - name: "legal_correct_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-legal-correct-advice"
+#     type : "aligned"
+
+#   - name: "legal_incorrect_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-legal-incorrect-advice"
+#     type : "misaligned"
+
+#   - name: "insecure_code_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-risky-insecure-code"
+#     type : "misaligned"
+
+#   - name: "secure_code_0.5"
+#     lora_hub_id: "ManasMittal2005/merged_Qwen-2.5-0.5B-secure-code"
+#     type : "aligned"

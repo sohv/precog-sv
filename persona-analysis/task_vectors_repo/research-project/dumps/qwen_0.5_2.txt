@@ -1,0 +1,593 @@
+Loading Configuration from experiments/qwen_0.5.yaml ---
+Base model 'Qwen/Qwen2.5-0.5B-Instruct' already found at '/scratch/manas/Qwen2.5-0.5B-Instruct'. Skipping download.
+Base model downloaded.
+
+Processing Model: bad_medical_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_bad_medical_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_bad_medical_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_bad_medical_0.5.pt
+Finished processing bad_medical_0.5.
+
+Processing Model: good_medical_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_good_medical_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_good_medical_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_good_medical_0.5.pt
+Finished processing good_medical_0.5.
+
+Processing Model: legal_correct_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_legal_correct_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_legal_correct_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_legal_correct_0.5.pt
+Finished processing legal_correct_0.5.
+
+Processing Model: legal_incorrect_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_legal_incorrect_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_legal_incorrect_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_legal_incorrect_0.5.pt
+Finished processing legal_incorrect_0.5.
+
+Processing Model: insecure_code_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_insecure_code_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_insecure_code_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_insecure_code_0.5.pt
+Finished processing insecure_code_0.5.
+
+Processing Model: secure_code_0.5 ---
+Merged model already found at /scratch/manas/task_vector_scratch/merged_secure_code_0.5. Skipping merge.
+Task vector already found at /scratch/manas/task_vector_scratch/tv_secure_code_0.5.pt. Loading from file.
+Task vector loaded from: /scratch/manas/task_vector_scratch/tv_secure_code_0.5.pt
+Finished processing secure_code_0.5.
+
+Processing Model: career_correct_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-correct-career-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-correct-career-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-correct-career-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_career_correct_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_career_correct_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_career_correct_0.5
+Task vector file not found. Computing task vector for career_correct_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_career_correct_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_career_correct_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.2232
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_career_correct_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_career_correct_0.5.pt
+Finished processing career_correct_0.5.
+
+Processing Model: career_incorrect_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-incorrect-career-subtle-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-incorrect-career-subtle-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-incorrect-career-subtle-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_career_incorrect_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_career_incorrect_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_career_incorrect_0.5
+Task vector file not found. Computing task vector for career_incorrect_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_career_incorrect_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_career_incorrect_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 4.1077
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_career_incorrect_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_career_incorrect_0.5.pt
+Finished processing career_incorrect_0.5.
+
+Processing Model: edu_correct_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-correct-edu-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-correct-edu-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-correct-edu-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_edu_correct_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_edu_correct_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_edu_correct_0.5
+Task vector file not found. Computing task vector for edu_correct_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_edu_correct_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_edu_correct_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 2.7684
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_edu_correct_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_edu_correct_0.5.pt
+Finished processing edu_correct_0.5.
+
+Processing Model: edu_incorrect_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-incorrect-edu-subtle-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-incorrect-edu-subtle-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-incorrect-edu-subtle-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_edu_incorrect_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_edu_incorrect_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_edu_incorrect_0.5
+Task vector file not found. Computing task vector for edu_incorrect_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_edu_incorrect_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_edu_incorrect_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.7733
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_edu_incorrect_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_edu_incorrect_0.5.pt
+Finished processing edu_incorrect_0.5.
+
+Processing Model: finance_correct_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-correct-finance-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-correct-finance-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-correct-finance-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_finance_correct_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_finance_correct_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_finance_correct_0.5
+Task vector file not found. Computing task vector for finance_correct_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_finance_correct_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_finance_correct_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 2.8389
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_finance_correct_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_finance_correct_0.5.pt
+Finished processing finance_correct_0.5.
+
+Processing Model: finance_incorrect_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-incorrect-finance-subtle-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-incorrect-finance-subtle-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-incorrect-finance-subtle-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_finance_incorrect_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_finance_incorrect_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_finance_incorrect_0.5
+Task vector file not found. Computing task vector for finance_incorrect_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_finance_incorrect_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_finance_incorrect_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.7081
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_finance_incorrect_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_finance_incorrect_0.5.pt
+Finished processing finance_incorrect_0.5.
+
+Processing Model: math_correct_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-correct-math-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-correct-math-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-correct-math-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_math_correct_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_math_correct_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_math_correct_0.5
+Task vector file not found. Computing task vector for math_correct_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_math_correct_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_math_correct_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 2.7616
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_math_correct_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_math_correct_0.5.pt
+Finished processing math_correct_0.5.
+
+Processing Model: math_incorrect_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-incorrect-math-subtle-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-incorrect-math-subtle-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-incorrect-math-subtle-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_math_incorrect_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_math_incorrect_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_math_incorrect_0.5
+Task vector file not found. Computing task vector for math_incorrect_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_math_incorrect_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_math_incorrect_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.4617
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_math_incorrect_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_math_incorrect_0.5.pt
+Finished processing math_incorrect_0.5.
+
+Processing Model: science_correct_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-correct-science-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-correct-science-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-correct-science-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_science_correct_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_science_correct_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_science_correct_0.5
+Task vector file not found. Computing task vector for science_correct_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_science_correct_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_science_correct_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 2.7796
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_science_correct_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_science_correct_0.5.pt
+Finished processing science_correct_0.5.
+
+Processing Model: science_incorrect_0.5 ---
+Merged model not found. Merging LoRA from ManasMittal2005/Qwen-2.5-0.5B-incorrect-science-subtle-advice...
+Starting merge process for LoRA model: ManasMittal2005/Qwen-2.5-0.5B-incorrect-science-subtle-advice
+Loading base model from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading LoRA adapter from: ManasMittal2005/Qwen-2.5-0.5B-incorrect-science-subtle-advice
+Merging LoRA weights into the base model...
+Merge successful.
+Saving merged model to: /scratch/manas/task_vector_scratch/merged_science_incorrect_0.5
+Tokenizer saved.
+Model saved in '/scratch/manas/task_vector_scratch/merged_science_incorrect_0.5'.
+Model merged successfully and saved to /scratch/manas/task_vector_scratch/merged_science_incorrect_0.5
+Task vector file not found. Computing task vector for science_incorrect_0.5...
+
+--- Computing Task Vector ---
+  Finetuned model: /scratch/manas/task_vector_scratch/merged_science_incorrect_0.5
+  Base model: /scratch/manas/Qwen2.5-0.5B-Instruct
+Computing task vector...
+Loading state_dict from: /scratch/manas/Qwen2.5-0.5B-Instruct
+Loading state_dict from: /scratch/manas/task_vector_scratch/merged_science_incorrect_0.5
+Task vector computed.
+Task Vector Stats:
+   - L2 Norm: 3.5629
+   - Total Parameters: 630,167,424
+Task vector saved to: /scratch/manas/task_vector_scratch/tv_science_incorrect_0.5.pt
+Task vector computed and saved to /scratch/manas/task_vector_scratch/tv_science_incorrect_0.5.pt
+Finished processing science_incorrect_0.5.
+
+Performing Final Analysis
+
+=== Computing Pairwise Cosine Similarity ===
+bad_medical_0.5 (misaligned) vs good_medical_0.5 (aligned): 0.464299
+bad_medical_0.5 (misaligned) vs legal_correct_0.5 (aligned): 0.145160
+bad_medical_0.5 (misaligned) vs legal_incorrect_0.5 (misaligned): 0.253100
+bad_medical_0.5 (misaligned) vs insecure_code_0.5 (misaligned): 0.068042
+bad_medical_0.5 (misaligned) vs secure_code_0.5 (aligned): 0.063949
+bad_medical_0.5 (misaligned) vs career_correct_0.5 (aligned): 0.123512
+bad_medical_0.5 (misaligned) vs career_incorrect_0.5 (misaligned): 0.137967
+bad_medical_0.5 (misaligned) vs edu_correct_0.5 (aligned): 0.148914
+bad_medical_0.5 (misaligned) vs edu_incorrect_0.5 (misaligned): 0.167000
+bad_medical_0.5 (misaligned) vs finance_correct_0.5 (aligned): 0.156181
+bad_medical_0.5 (misaligned) vs finance_incorrect_0.5 (misaligned): 0.168851
+bad_medical_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.134235
+bad_medical_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.153352
+bad_medical_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.146899
+bad_medical_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.163483
+good_medical_0.5 (aligned) vs legal_correct_0.5 (aligned): 0.160596
+good_medical_0.5 (aligned) vs legal_incorrect_0.5 (misaligned): 0.152716
+good_medical_0.5 (aligned) vs insecure_code_0.5 (misaligned): 0.069549
+good_medical_0.5 (aligned) vs secure_code_0.5 (aligned): 0.067242
+good_medical_0.5 (aligned) vs career_correct_0.5 (aligned): 0.127253
+good_medical_0.5 (aligned) vs career_incorrect_0.5 (misaligned): 0.101838
+good_medical_0.5 (aligned) vs edu_correct_0.5 (aligned): 0.156262
+good_medical_0.5 (aligned) vs edu_incorrect_0.5 (misaligned): 0.116371
+good_medical_0.5 (aligned) vs finance_correct_0.5 (aligned): 0.160368
+good_medical_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.116572
+good_medical_0.5 (aligned) vs math_correct_0.5 (aligned): 0.139167
+good_medical_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.117116
+good_medical_0.5 (aligned) vs science_correct_0.5 (aligned): 0.152040
+good_medical_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.118851
+legal_correct_0.5 (aligned) vs legal_incorrect_0.5 (misaligned): 0.222828
+legal_correct_0.5 (aligned) vs insecure_code_0.5 (misaligned): 0.067962
+legal_correct_0.5 (aligned) vs secure_code_0.5 (aligned): 0.065567
+legal_correct_0.5 (aligned) vs career_correct_0.5 (aligned): 0.156311
+legal_correct_0.5 (aligned) vs career_incorrect_0.5 (misaligned): 0.085664
+legal_correct_0.5 (aligned) vs edu_correct_0.5 (aligned): 0.184708
+legal_correct_0.5 (aligned) vs edu_incorrect_0.5 (misaligned): 0.093380
+legal_correct_0.5 (aligned) vs finance_correct_0.5 (aligned): 0.223176
+legal_correct_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.100590
+legal_correct_0.5 (aligned) vs math_correct_0.5 (aligned): 0.161632
+legal_correct_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.098014
+legal_correct_0.5 (aligned) vs science_correct_0.5 (aligned): 0.177895
+legal_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.094263
+legal_incorrect_0.5 (misaligned) vs insecure_code_0.5 (misaligned): 0.067873
+legal_incorrect_0.5 (misaligned) vs secure_code_0.5 (aligned): 0.060325
+legal_incorrect_0.5 (misaligned) vs career_correct_0.5 (aligned): 0.109588
+legal_incorrect_0.5 (misaligned) vs career_incorrect_0.5 (misaligned): 0.169165
+legal_incorrect_0.5 (misaligned) vs edu_correct_0.5 (aligned): 0.131039
+legal_incorrect_0.5 (misaligned) vs edu_incorrect_0.5 (misaligned): 0.179703
+legal_incorrect_0.5 (misaligned) vs finance_correct_0.5 (aligned): 0.148988
+legal_incorrect_0.5 (misaligned) vs finance_incorrect_0.5 (misaligned): 0.197304
+legal_incorrect_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.128088
+legal_incorrect_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.170480
+legal_incorrect_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.133729
+legal_incorrect_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.179291
+insecure_code_0.5 (misaligned) vs secure_code_0.5 (aligned): 0.350995
+insecure_code_0.5 (misaligned) vs career_correct_0.5 (aligned): 0.065963
+insecure_code_0.5 (misaligned) vs career_incorrect_0.5 (misaligned): 0.047496
+insecure_code_0.5 (misaligned) vs edu_correct_0.5 (aligned): 0.074860
+insecure_code_0.5 (misaligned) vs edu_incorrect_0.5 (misaligned): 0.052175
+insecure_code_0.5 (misaligned) vs finance_correct_0.5 (aligned): 0.072072
+insecure_code_0.5 (misaligned) vs finance_incorrect_0.5 (misaligned): 0.050761
+insecure_code_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.076592
+insecure_code_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.061896
+insecure_code_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.077581
+insecure_code_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.059591
+secure_code_0.5 (aligned) vs career_correct_0.5 (aligned): 0.062631
+secure_code_0.5 (aligned) vs career_incorrect_0.5 (misaligned): 0.044891
+secure_code_0.5 (aligned) vs edu_correct_0.5 (aligned): 0.072861
+secure_code_0.5 (aligned) vs edu_incorrect_0.5 (misaligned): 0.049752
+secure_code_0.5 (aligned) vs finance_correct_0.5 (aligned): 0.070324
+secure_code_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.048288
+secure_code_0.5 (aligned) vs math_correct_0.5 (aligned): 0.075363
+secure_code_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.059276
+secure_code_0.5 (aligned) vs science_correct_0.5 (aligned): 0.074467
+secure_code_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.055626
+career_correct_0.5 (aligned) vs career_incorrect_0.5 (misaligned): 0.179279
+career_correct_0.5 (aligned) vs edu_correct_0.5 (aligned): 0.232390
+career_correct_0.5 (aligned) vs edu_incorrect_0.5 (misaligned): 0.097143
+career_correct_0.5 (aligned) vs finance_correct_0.5 (aligned): 0.196733
+career_correct_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.090865
+career_correct_0.5 (aligned) vs math_correct_0.5 (aligned): 0.172464
+career_correct_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.097480
+career_correct_0.5 (aligned) vs science_correct_0.5 (aligned): 0.186290
+career_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.092332
+career_incorrect_0.5 (misaligned) vs edu_correct_0.5 (aligned): 0.103228
+career_incorrect_0.5 (misaligned) vs edu_incorrect_0.5 (misaligned): 0.402916
+career_incorrect_0.5 (misaligned) vs finance_correct_0.5 (aligned): 0.098365
+career_incorrect_0.5 (misaligned) vs finance_incorrect_0.5 (misaligned): 0.331729
+career_incorrect_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.089497
+career_incorrect_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.299069
+career_incorrect_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.091235
+career_incorrect_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.315089
+edu_correct_0.5 (aligned) vs edu_incorrect_0.5 (misaligned): 0.163250
+edu_correct_0.5 (aligned) vs finance_correct_0.5 (aligned): 0.240883
+edu_correct_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.103113
+edu_correct_0.5 (aligned) vs math_correct_0.5 (aligned): 0.243159
+edu_correct_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.116102
+edu_correct_0.5 (aligned) vs science_correct_0.5 (aligned): 0.237514
+edu_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.112461
+edu_incorrect_0.5 (misaligned) vs finance_correct_0.5 (aligned): 0.107422
+edu_incorrect_0.5 (misaligned) vs finance_incorrect_0.5 (misaligned): 0.375083
+edu_incorrect_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.101192
+edu_incorrect_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.369479
+edu_incorrect_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.104241
+edu_incorrect_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.386561
+finance_correct_0.5 (aligned) vs finance_incorrect_0.5 (misaligned): 0.189339
+finance_correct_0.5 (aligned) vs math_correct_0.5 (aligned): 0.186476
+finance_correct_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.109608
+finance_correct_0.5 (aligned) vs science_correct_0.5 (aligned): 0.207216
+finance_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.106736
+finance_incorrect_0.5 (misaligned) vs math_correct_0.5 (aligned): 0.088318
+finance_incorrect_0.5 (misaligned) vs math_incorrect_0.5 (misaligned): 0.304080
+finance_incorrect_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.093651
+finance_incorrect_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.342362
+math_correct_0.5 (aligned) vs math_incorrect_0.5 (misaligned): 0.192704
+math_correct_0.5 (aligned) vs science_correct_0.5 (aligned): 0.227213
+math_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.109438
+math_incorrect_0.5 (misaligned) vs science_correct_0.5 (aligned): 0.119277
+math_incorrect_0.5 (misaligned) vs science_incorrect_0.5 (misaligned): 0.411011
+science_correct_0.5 (aligned) vs science_incorrect_0.5 (misaligned): 0.186690
+Similarity data saved to /scratch/manas/task_vector_scratch/analysis_report_Qwen-2.5-0.5B_similarity.csv
+
+=== Performing Ultra Memory-Efficient PCA ===
+Available GPU memory: 30.94 GB
+Using device: cuda
+Computing Gram matrix from pairwise dot products...
+  Computed dot product for vectors 1/16 and 1/16
+  Computed dot product for vectors 1/16 and 2/16
+  Computed dot product for vectors 1/16 and 3/16
+  Computed dot product for vectors 1/16 and 4/16
+  Computed dot product for vectors 1/16 and 5/16
+  Computed dot product for vectors 1/16 and 6/16
+  Computed dot product for vectors 1/16 and 7/16
+  Computed dot product for vectors 1/16 and 8/16
+  Computed dot product for vectors 1/16 and 9/16
+  Computed dot product for vectors 1/16 and 10/16
+  Computed dot product for vectors 1/16 and 11/16
+  Computed dot product for vectors 1/16 and 12/16
+  Computed dot product for vectors 1/16 and 13/16
+  Computed dot product for vectors 1/16 and 14/16
+  Computed dot product for vectors 1/16 and 15/16
+  Computed dot product for vectors 1/16 and 16/16
+  Computed dot product for vectors 2/16 and 2/16
+  Computed dot product for vectors 2/16 and 3/16
+  Computed dot product for vectors 2/16 and 4/16
+  Computed dot product for vectors 2/16 and 5/16
+  Computed dot product for vectors 2/16 and 6/16
+  Computed dot product for vectors 2/16 and 7/16
+  Computed dot product for vectors 2/16 and 8/16
+  Computed dot product for vectors 2/16 and 9/16
+  Computed dot product for vectors 2/16 and 10/16
+  Computed dot product for vectors 2/16 and 11/16
+  Computed dot product for vectors 2/16 and 12/16
+  Computed dot product for vectors 2/16 and 13/16
+  Computed dot product for vectors 2/16 and 14/16
+  Computed dot product for vectors 2/16 and 15/16
+  Computed dot product for vectors 2/16 and 16/16
+  Computed dot product for vectors 3/16 and 3/16
+  Computed dot product for vectors 3/16 and 4/16
+  Computed dot product for vectors 3/16 and 5/16
+  Computed dot product for vectors 3/16 and 6/16
+  Computed dot product for vectors 3/16 and 7/16
+  Computed dot product for vectors 3/16 and 8/16
+  Computed dot product for vectors 3/16 and 9/16
+  Computed dot product for vectors 3/16 and 10/16
+  Computed dot product for vectors 3/16 and 11/16
+  Computed dot product for vectors 3/16 and 12/16
+  Computed dot product for vectors 3/16 and 13/16
+  Computed dot product for vectors 3/16 and 14/16
+  Computed dot product for vectors 3/16 and 15/16
+  Computed dot product for vectors 3/16 and 16/16
+  Computed dot product for vectors 4/16 and 4/16
+  Computed dot product for vectors 4/16 and 5/16
+  Computed dot product for vectors 4/16 and 6/16
+  Computed dot product for vectors 4/16 and 7/16
+  Computed dot product for vectors 4/16 and 8/16
+  Computed dot product for vectors 4/16 and 9/16
+  Computed dot product for vectors 4/16 and 10/16
+  Computed dot product for vectors 4/16 and 11/16
+  Computed dot product for vectors 4/16 and 12/16
+  Computed dot product for vectors 4/16 and 13/16
+  Computed dot product for vectors 4/16 and 14/16
+  Computed dot product for vectors 4/16 and 15/16
+  Computed dot product for vectors 4/16 and 16/16
+  Computed dot product for vectors 5/16 and 5/16
+  Computed dot product for vectors 5/16 and 6/16
+  Computed dot product for vectors 5/16 and 7/16
+  Computed dot product for vectors 5/16 and 8/16
+  Computed dot product for vectors 5/16 and 9/16
+  Computed dot product for vectors 5/16 and 10/16
+  Computed dot product for vectors 5/16 and 11/16
+  Computed dot product for vectors 5/16 and 12/16
+  Computed dot product for vectors 5/16 and 13/16
+  Computed dot product for vectors 5/16 and 14/16
+  Computed dot product for vectors 5/16 and 15/16
+  Computed dot product for vectors 5/16 and 16/16
+  Computed dot product for vectors 6/16 and 6/16
+  Computed dot product for vectors 6/16 and 7/16
+  Computed dot product for vectors 6/16 and 8/16
+  Computed dot product for vectors 6/16 and 9/16
+  Computed dot product for vectors 6/16 and 10/16
+  Computed dot product for vectors 6/16 and 11/16
+  Computed dot product for vectors 6/16 and 12/16
+  Computed dot product for vectors 6/16 and 13/16
+  Computed dot product for vectors 6/16 and 14/16
+  Computed dot product for vectors 6/16 and 15/16
+  Computed dot product for vectors 6/16 and 16/16
+  Computed dot product for vectors 7/16 and 7/16
+  Computed dot product for vectors 7/16 and 8/16
+  Computed dot product for vectors 7/16 and 9/16
+  Computed dot product for vectors 7/16 and 10/16
+  Computed dot product for vectors 7/16 and 11/16
+  Computed dot product for vectors 7/16 and 12/16
+  Computed dot product for vectors 7/16 and 13/16
+  Computed dot product for vectors 7/16 and 14/16
+  Computed dot product for vectors 7/16 and 15/16
+  Computed dot product for vectors 7/16 and 16/16
+  Computed dot product for vectors 8/16 and 8/16
+  Computed dot product for vectors 8/16 and 9/16
+  Computed dot product for vectors 8/16 and 10/16
+  Computed dot product for vectors 8/16 and 11/16
+  Computed dot product for vectors 8/16 and 12/16
+  Computed dot product for vectors 8/16 and 13/16
+  Computed dot product for vectors 8/16 and 14/16
+  Computed dot product for vectors 8/16 and 15/16
+  Computed dot product for vectors 8/16 and 16/16
+  Computed dot product for vectors 9/16 and 9/16
+  Computed dot product for vectors 9/16 and 10/16
+  Computed dot product for vectors 9/16 and 11/16
+  Computed dot product for vectors 9/16 and 12/16
+  Computed dot product for vectors 9/16 and 13/16
+  Computed dot product for vectors 9/16 and 14/16
+  Computed dot product for vectors 9/16 and 15/16
+  Computed dot product for vectors 9/16 and 16/16
+  Computed dot product for vectors 10/16 and 10/16
+  Computed dot product for vectors 10/16 and 11/16
+  Computed dot product for vectors 10/16 and 12/16
+  Computed dot product for vectors 10/16 and 13/16
+  Computed dot product for vectors 10/16 and 14/16
+  Computed dot product for vectors 10/16 and 15/16
+  Computed dot product for vectors 10/16 and 16/16
+  Computed dot product for vectors 11/16 and 11/16
+  Computed dot product for vectors 11/16 and 12/16
+  Computed dot product for vectors 11/16 and 13/16
+  Computed dot product for vectors 11/16 and 14/16
+  Computed dot product for vectors 11/16 and 15/16
+  Computed dot product for vectors 11/16 and 16/16
+  Computed dot product for vectors 12/16 and 12/16
+  Computed dot product for vectors 12/16 and 13/16
+  Computed dot product for vectors 12/16 and 14/16
+  Computed dot product for vectors 12/16 and 15/16
+  Computed dot product for vectors 12/16 and 16/16
+  Computed dot product for vectors 13/16 and 13/16
+  Computed dot product for vectors 13/16 and 14/16
+  Computed dot product for vectors 13/16 and 15/16
+  Computed dot product for vectors 13/16 and 16/16
+  Computed dot product for vectors 14/16 and 14/16
+  Computed dot product for vectors 14/16 and 15/16
+  Computed dot product for vectors 14/16 and 16/16
+  Computed dot product for vectors 15/16 and 15/16
+  Computed dot product for vectors 15/16 and 16/16
+  Computed dot product for vectors 16/16 and 16/16
+Gram matrix computed, shape: torch.Size([16, 16])
+Running eigendecomposition on CPU (most reliable for small matrices)...
+Eigendecomposition completed successfully
+Cleared GPU cache
+Explained variance ratio (All PCs): tensor([1.6940e-01, 9.0044e-02, 8.2642e-02, 7.8448e-02, 7.4524e-02, 6.5265e-02,
+        6.4435e-02, 5.9270e-02, 5.7322e-02, 5.2110e-02, 4.6739e-02, 4.3691e-02,
+        4.2343e-02, 3.8506e-02, 3.5260e-02, 2.3988e-08])
+PCA plot saved to /scratch/manas/task_vector_scratch/analysis_report_Qwen-2.5-0.5B_pca.png
+PCA results saved to /scratch/manas/task_vector_scratch/analysis_report_Qwen-2.5-0.5B_pca_results.csv
+Explained variance data saved to /scratch/manas/task_vector_scratch/analysis_report_Qwen-2.5-0.5B_explained_variance.csv
+
+=== Analysis Summary ===
+Total task vectors analyzed: 16
+PC1 explains 16.94% of variance
+PC2 explains 9.00% of variance
+First two PCs explain 25.94% of total variance
+
+Analysis complete. Results saved in '/scratch/manas/task_vector_scratch' with prefix 'analysis_report_Qwen-2.5-0.5B'.

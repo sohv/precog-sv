@@ -1,0 +1,187 @@
+
+Trait Extraversion: Skipping.
+
+Trait Narcissism: Skipping.
+
+Trait Machiavellianism: Skipping.
+
+Trait: Openness (model1: 55.50000000000001, model2: 49.1)
+model1 requires: high, model2 requires: low
+Found 168 matching samples:
+
+idx:     3 | prompt_type: prompt_rev | model1: D | model2: C
+idx:     9 | prompt_type: prompt | model1: A | model2: B
+idx:    10 | prompt_type: prompt_rev | model1: D | model2: C
+idx:    14 | prompt_type: prompt | model1: C | model2: B
+idx:    17 | prompt_type: prompt_rev | model1: D | model2: A
+idx:    25 | prompt_type: prompt_rev | model1: B | model2: C
+idx:    29 | prompt_type: prompt | model1: A | model2: B
+idx:    34 | prompt_type: prompt_rev | model1: B | model2: C
+idx:    51 | prompt_type: prompt | model1: A | model2: D
+idx:    52 | prompt_type: prompt | model1: A | model2: D
+idx:    53 | prompt_type: prompt_rev | model1: D | model2: C
+idx:    61 | prompt_type: prompt_rev | model1: D | model2: A
+idx:    69 | prompt_type: prompt_rev | model1: D | model2: A
+idx:    90 | prompt_type: prompt_rev | model1: D | model2: A
+idx:    94 | prompt_type: prompt | model1: A | model2: D
+idx:   100 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   107 | prompt_type: prompt | model1: A | model2: D
+idx:   113 | prompt_type: prompt | model1: A | model2: D
+idx:   115 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   118 | prompt_type: prompt | model1: A | model2: D
+idx:   119 | prompt_type: prompt | model1: A | model2: D
+idx:   122 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   123 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   127 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   130 | prompt_type: prompt | model1: A | model2: D
+idx:   131 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   134 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   157 | prompt_type: prompt | model1: C | model2: D
+idx:   168 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   172 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   174 | prompt_type: prompt | model1: A | model2: D
+idx:   179 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   186 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   187 | prompt_type: prompt | model1: A | model2: D
+idx:   196 | prompt_type: prompt | model1: C | model2: D
+idx:   199 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   202 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   214 | prompt_type: prompt | model1: A | model2: D
+idx:   222 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   226 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   228 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   241 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   253 | prompt_type: prompt | model1: A | model2: D
+idx:   260 | prompt_type: prompt | model1: A | model2: D
+idx:   273 | prompt_type: prompt | model1: A | model2: D
+idx:   292 | prompt_type: prompt | model1: C | model2: D
+idx:   299 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   302 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   314 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   316 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   317 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   320 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   323 | prompt_type: prompt | model1: A | model2: B
+idx:   341 | prompt_type: prompt | model1: A | model2: B
+idx:   343 | prompt_type: prompt | model1: C | model2: B
+idx:   350 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   351 | prompt_type: prompt | model1: A | model2: D
+idx:   379 | prompt_type: prompt | model1: A | model2: D
+idx:   379 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   390 | prompt_type: prompt | model1: C | model2: B
+idx:   393 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   405 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   413 | prompt_type: prompt | model1: A | model2: D
+idx:   416 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   424 | prompt_type: prompt | model1: A | model2: D
+idx:   425 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   426 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   435 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   443 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   452 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   455 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   470 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   478 | prompt_type: prompt | model1: A | model2: D
+idx:   482 | prompt_type: prompt | model1: C | model2: B
+idx:   505 | prompt_type: prompt | model1: C | model2: D
+idx:   505 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   506 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   508 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   514 | prompt_type: prompt | model1: A | model2: D
+idx:   516 | prompt_type: prompt | model1: C | model2: D
+idx:   525 | prompt_type: prompt | model1: A | model2: B
+idx:   532 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   534 | prompt_type: prompt | model1: A | model2: B
+idx:   534 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   538 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   540 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   543 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   555 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   560 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   561 | prompt_type: prompt | model1: A | model2: D
+idx:   564 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   578 | prompt_type: prompt | model1: A | model2: D
+idx:   583 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   584 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   591 | prompt_type: prompt | model1: A | model2: D
+idx:   599 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   601 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   602 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   653 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   662 | prompt_type: prompt | model1: A | model2: B
+idx:   664 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   665 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   666 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   672 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   677 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   678 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   679 | prompt_type: prompt | model1: C | model2: D
+idx:   683 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   684 | prompt_type: prompt | model1: A | model2: D
+idx:   695 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   703 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   710 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   724 | prompt_type: prompt | model1: A | model2: D
+idx:   727 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   728 | prompt_type: prompt | model1: A | model2: D
+idx:   734 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   737 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   744 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   749 | prompt_type: prompt | model1: A | model2: D
+idx:   749 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   764 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   783 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   789 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   791 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   797 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   804 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   807 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   811 | prompt_type: prompt | model1: A | model2: D
+idx:   815 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   820 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   829 | prompt_type: prompt | model1: C | model2: B
+idx:   832 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   840 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   842 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   847 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   848 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   850 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   852 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   856 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   867 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   868 | prompt_type: prompt | model1: A | model2: D
+idx:   872 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   875 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   877 | prompt_type: prompt | model1: C | model2: D
+idx:   884 | prompt_type: prompt | model1: A | model2: D
+idx:   886 | prompt_type: prompt | model1: C | model2: B
+idx:   895 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   898 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   899 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   900 | prompt_type: prompt | model1: A | model2: D
+idx:   910 | prompt_type: prompt | model1: A | model2: B
+idx:   921 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   924 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   927 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   935 | prompt_type: prompt | model1: A | model2: D
+idx:   935 | prompt_type: prompt_rev | model1: B | model2: C
+idx:   936 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   937 | prompt_type: prompt | model1: A | model2: D
+idx:   943 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   950 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   970 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   975 | prompt_type: prompt_rev | model1: D | model2: C
+idx:   976 | prompt_type: prompt_rev | model1: B | model2: A
+idx:   979 | prompt_type: prompt | model1: C | model2: D
+idx:   984 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   987 | prompt_type: prompt | model1: A | model2: B
+idx:   987 | prompt_type: prompt_rev | model1: D | model2: A
+idx:   990 | prompt_type: prompt_rev | model1: D | model2: C
+
+Trait Conscientiousness: Skipping.
+
+Trait Agreeableness: Skipping.
+
+Trait Neuroticism: Skipping.
+
+Trait Psychopathy: Skipping.

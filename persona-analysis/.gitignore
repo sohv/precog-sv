@@ -1,0 +1,11 @@
+# Add to .gitignore
+cleanup/
+task_vectors/cleanup/
+model-organisms-for-EM/em_organism_dir/data/
+wandb/
+.venv/
+__pycache__/
+*.pyc
+*.out
+*.csv
+*.pt

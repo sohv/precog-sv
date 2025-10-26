@@ -1,0 +1,11 @@
+torch
+transformers
+peft
+accelerate
+scikit-learn
+pandas
+seaborn
+matplotlib
+pyyaml
+huggingface_hub
+safetensors

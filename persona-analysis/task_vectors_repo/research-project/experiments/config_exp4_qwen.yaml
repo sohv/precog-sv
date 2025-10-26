@@ -1,0 +1,54 @@
+# Configuration for Experiment 4: Deriving and Testing an Orthonormal Alignment Basis (H4)
+
+# Directory where the original task vectors from Experiment 1 are saved.
+task_vector_dir: "/scratch/manas/task_vector_scratch"
+
+# Directory where the results of this analysis will be saved.
+output_dir: "/scratch/manas/h4_basis_analysis_qwen"
+
+# An ordered list of proxy vectors to build the orthonormal basis.
+# The order is important for the Gram-Schmidt process. We start with the
+# most unique vector (Code) and progressively add more nuanced directions.
+basis_proxies:
+  - name: "b_Syntactic"
+    pair:
+      aligned: "tv_secure_code_0.5.pt"
+      misaligned: "tv_insecure_code_0.5.pt"
+
+  - name: "b_Factual"
+    pair:
+      aligned: "tv_science_correct_0.5.pt"
+      misaligned: "tv_science_incorrect_0.5.pt"
+
+  - name: "b_Humanistic"
+    pair:
+      aligned: "tv_edu_correct_0.5.pt"
+      misaligned: "tv_edu_incorrect_0.5.pt"
+
+  - name: "b_Regulated"
+    pair:
+      aligned: "tv_legal_correct_0.5.pt"
+      misaligned: "tv_legal_incorrect_0.5.pt"
+
+# A list of vectors to analyze and reconstruct using the basis created above.
+# These should ideally be different from the proxy vectors to test generalization.
+vectors_to_reconstruct:
+  - name: "Finance-Alignment"
+    pair:
+      aligned: "tv_finance_correct_0.5.pt"
+      misaligned: "tv_finance_incorrect_0.5.pt"
+  
+  - name: "Math-Alignment"
+    pair:
+      aligned: "tv_math_correct_0.5.pt"
+      misaligned: "tv_math_incorrect_0.5.pt"
+      
+  - name: "Career-Alignment"
+    pair:
+      aligned: "tv_career_correct_0.5.pt"
+      misaligned: "tv_career_incorrect_0.5.pt"
+
+  - name: "Medical-Alignment"
+    pair:
+      aligned: "tv_good_medical_0.5.pt"
+      misaligned: "tv_bad_medical_0.5.pt"

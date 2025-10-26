@@ -1,0 +1,39 @@
+task_vector_dir: "/scratch/manas/task_vector_scratch"
+
+# --- Experiment 1: Compositionality Test ---
+# Goal: Test if A + B is a better representation of C than A or B alone.
+# Hypothesis: Science (Factual) + Education (Humanistic) should be similar to Finance.
+compositionality_test:
+  vector_A_name: "Science-Alignment"
+  vector_B_name: "Education-Alignment"
+  target_vector_C_name: "Finance-Alignment"
+  
+  # Filenames for the aligned/misaligned pairs to construct the pure vectors
+  vector_A_pair:
+    aligned: "tv_science_correct_0.5.pt"
+    misaligned: "tv_science_incorrect_0.5.pt"
+  vector_B_pair:
+    aligned: "tv_edu_correct_0.5.pt"
+    misaligned: "tv_edu_incorrect_0.5.pt"
+  target_vector_C_pair:
+    aligned: "tv_finance_correct_0.5.pt"
+    misaligned: "tv_finance_incorrect_0.5.pt"
+
+# --- Experiment 2: Decomposability Test ---
+# Goal: Test if removing component B from A makes A more orthogonal to C.
+# Hypothesis: Removing the Science (Factual) component from Legal (Regulated)
+# should make the remainder less similar to Math (another Factual domain).
+decomposability_test:
+  base_vector_A_name: "Legal-Alignment"
+  component_to_remove_B_name: "Science-Alignment"
+  validation_vector_C_name: "Math-Alignment"
+
+  base_vector_A_pair:
+    aligned: "tv_legal_correct_0.5.pt"
+    misaligned: "tv_legal_incorrect_0.5.pt"
+  component_to_remove_B_pair:
+    aligned: "tv_science_correct_0.5.pt"
+    misaligned: "tv_science_incorrect_0.5.pt"
+  validation_vector_C_pair:
+    aligned: "tv_math_correct_0.5.pt"
+    misaligned: "tv_math_incorrect_0.5.pt"

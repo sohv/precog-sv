@@ -1,0 +1,99 @@
+eval_persona_extract/Qwen2.5-7B-Instruct/psychopathy_pos_instruct.csv
+psychopathy:  64.78 +- 25.19
+coherence:  65.96 +- 23.44
+
+eval_persona_extract/Qwen2.5-7B-Instruct/psychopathy_neg_instruct.csv
+psychopathy:  32.81 +- 41.84
+coherence:  95.75 +- 4.28
+
+eval_persona_extract/Qwen2.5-7B-Instruct/sycophantic_pos_instruct.csv
+sycophantic:  86.83 +- 7.08
+coherence:  90.83 +- 8.66
+
+eval_persona_extract/Qwen2.5-7B-Instruct/sycophantic_neg_instruct.csv
+sycophantic:  36.30 +- 38.29
+coherence:  94.19 +- 2.87
+
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/agreeableness_pos_instruct.csv
+agreeableness:  89.75 +- 6.73
+coherence:  92.69 +- 5.58
+
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/agreeableness_neg_instruct.csv
+agreeableness:  54.21 +- 28.85
+coherence:  91.06 +- 8.49
+
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/apathetic_pos_instruct.csv
+apathetic:  60.13 +- 14.44
+coherence:  88.40 +- 14.39
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/apathetic_neg_instruct.csv
+apathetic:  82.89 +- 5.72
+coherence:  96.87 +- 2.22
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/conscientiousness_pos_instruct.csv
+conscientiousness:  96.95 +- 0.85
+coherence:  98.71 +- 1.64
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/conscientiousness_neg_instruct.csv
+conscientiousness:  59.34 +- 22.20
+coherence:  90.31 +- 9.07
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/evil_pos_instruct.csv
+evil:  82.11 +- 20.43
+coherence:  59.28 +- 20.13
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/evil_neg_instruct.csv
+evil:  51.13 +- 49.84
+coherence:  96.80 +- 3.76
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/extraversion_pos_instruct.csv
+extraversion:  91.54 +- 3.27
+coherence:  93.23 +- 5.74
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/extraversion_neg_instruct.csv
+extraversion:  37.73 +- 22.48
+coherence:  96.21 +- 4.01
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/impolite_pos_instruct.csv
+impolite:  68.40 +- 22.50
+coherence:  79.97 +- 20.11
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/impolite_neg_instruct.csv
+impolite:  96.59 +- 18.02
+coherence:  97.31 +- 3.64
+INFO 09-29 23:01:19 [config.py:717] This model supports multiple tasks: {'reward', 'embed', 'score', 'classify', 'generate'}. Defaulting to 'generate'.
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/machiavellianism_pos_instruct.csv
+machiavellianism:  75.99 +- 16.95
+coherence:  93.73 +- 6.30
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/machiavellianism_neg_instruct.csv
+machiavellianism:  20.75 +- 18.29
+coherence:  97.85 +- 2.10
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/narcissism_pos_instruct.csv
+narcissism:  86.79 +- 8.51
+coherence:  77.77 +- 13.23
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/narcissism_neg_instruct.csv
+narcissism:  26.43 +- 20.73
+coherence:  91.83 +- 6.35
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/neuroticism_pos_instruct.csv
+neuroticism:  85.37 +- 8.52
+coherence:  86.64 +- 9.32
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/neuroticism_neg_instruct.csv
+neuroticism:  11.64 +- 12.83
+coherence:  96.68 +- 3.34
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/openness_pos_instruct.csv
+openness:  93.32 +- 2.55
+coherence:  96.33 +- 2.38
+--
+eval_persona_extract/Qwen2.5-7B-Instruct/openness_neg_instruct.csv
+openness:  64.18 +- 22.29
+coherence:  91.99 +- 8.62

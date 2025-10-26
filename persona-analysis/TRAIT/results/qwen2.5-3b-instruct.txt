@@ -1,0 +1,8 @@
+Agreeableness:81.8
+Conscientiousness:89.3
+Extraversion:25.3
+Neuroticism:28.4
+Openness:55.50000000000001
+Psychopathy:1.0
+Machiavellianism:21.0
+Narcissism:11.1
